@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home Page</title>
+    <style>
+      /* Write all necessery css here  */
+      body{
+        margin: 0%;
+        padding: 0%;
+      }
+      .nav{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+      }
+      #product-container{
+        display: grid;
+        grid-template-columns:20% 20% 20% 20% ;
+        grid-gap: 20px;
+        justify-content: center;
+      }
+      #product-container>div{
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        padding: 10px;
+      }
+      #product-container>div>img{
+        height: 300px;
+        width: 100%;
+
+      }
+      #product-container>div>button{
+         display: block;
+         margin: auto;
+         background-color: red;
+         color: white;
+         padding: 5px;
+         border: none;
+         border-radius: 3px;
+
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="nav">
+      <h1>The Fashion Store</h1>
+      <a href="./men.html">Men</a>
+      <a href="./women.html">Women</a>
+      <a href="./kids.html">Kids</a>
+      <a href="./cart.html">Cart</a>
+      <a href="./wishlist.html">Wishlist</a>
+    </div>
+    <!-- Use this Select Tag for Filtering the Products  -->
+    <!-- <select id="filter">
+      <option value="">Filter By Category</option>
+      <option value="Laptop">Laptop</option>
+      <option value="Mobile">Mobile</option>
+      <option value="Speakers">Speakers</option>
+    </select> -->
+    <div id="product-container">
+      <!-- Here Append All the Products  -->
+    </div>
+  </body>
+  <script>
+    // Write all necessery JS here
+    const APIURL = `https://weary-bee-train.cyclic.app/women`;
+    let fetchedData = [];
+    const container = document.getElementById("product-container");
+    const selectFilter = document.getElementById("filter");
+
+    FetchDataAsync()
+    async function FetchDataAsync(){
+      try{
+        let res = await fetch(APIURL);
+        let data = await res.json();
+        fetchedData = data.data;
+        console.log(data)
+        DisplayProduct(data);
+      }
+      catch(error){
+        console.log(error);
+      }
+    }
+
+
+    let CartArr = JSON.parse(localStorage.getItem("cart"))||[];
+
+    function DisplayProduct(data){
+      container.innerHTML = "";
+      data.forEach((ele)=>{
+        const product = document.createElement("div");
+
+        const image = document.createElement("img");
+        image.setAttribute("src",ele.avatar);
+
+        const name = document.createElement("h3");
+        name.textContent = ele.name;
+
+        const price = document.createElement("h4");
+        price.textContent = "$ "+ele.price;
+
+        const desc = document.createElement("p");
+        desc.innerText = ele.Description;
+
+        const button = document.createElement("button");
+        button.textContent = "Add to Cart";
+          button.addEventListener("click",function(){
+            if(checkDuplicate(ele)){
+              alert("Product Already in Cart");
+            }
+            else{
+              CartArr.push({...ele,quantity:1})
+              localStorage.setItem("cart",JSON.stringify(CartArr))
+              alert("Product Added to Cart");
+            }
+          })
+        product.append(image,name,price,desc,button)
+        container.append(product)
+      })
+    }
+
+    selectFilter.addEventListener("change",()=>{
+      if(selectFilter.value===""){
+        DisplayProduct(fetchedData)
+      }
+      else{
+        let filtered = fetchedData.filter((ele)=>{
+        return ele.category === selectFilter.value;
+        });
+        DisplayProduct(filtered);
+      }
+      
+    });
+
+    function checkDuplicate(ele){
+      for(let i=0; i<CartArr.length; i++){
+        if(CartArr[i].id===ele.id){
+          return true;
+        }
+      }
+      return false;
+    }
+    
+
+  </script>
+</html>
