@@ -48,10 +48,11 @@ body {
 #D1 a {
 	color: white;
 }
-
-#D1 div:hover {
-	background-color: white;
+#D1 > div> a :hover{
 	color: black;
+}
+#D1 div:hover {
+	background-color: rgb(243, 155, 155);
 }
 
 #D2 {

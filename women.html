@@ -5,147 +5,572 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/x-icon" href="./image/Logo.jpeg">
-    <title>Home Page</title>
-    <style>
-      /* Write all necessery css here  */
-      body{
-        margin: 0%;
-        padding: 0%;
-      }
-      .nav{
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-      }
-      #product-container{
-        display: grid;
-        grid-template-columns:20% 20% 20% 20% ;
-        grid-gap: 20px;
-        justify-content: center;
-      }
-      #product-container>div{
-        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-        padding: 10px;
-      }
-      #product-container>div>img{
-        height: 300px;
-        width: 100%;
-
-      }
-      #product-container>div>button{
-         display: block;
-         margin: auto;
-         background-color: red;
-         color: white;
-         padding: 5px;
-         border: none;
-         border-radius: 3px;
-
-      }
-    </style>
+    <link rel="stylesheet" href="./style/nav.css">
+    <link rel="stylesheet" href="./style/footer.css">
+    <link rel="stylesheet" href="/style/men.css">
+    <title>Women Home Page</title>
+    
   </head>
 
   <body>
-    <div class="nav">
-      <h1>The Fashion Store</h1>
-      <a href="./men.html">Men</a>
-      <a href="./women.html">Women</a>
-      <a href="./kids.html">Kids</a>
-      <a href="./cart.html">Cart</a>
-      <a href="./wishlist.html">Wishlist</a>
+    <!-- navbar -->
+    <header>
+			<div id="nav_box_1">
+				<div id="D1">
+					<div class="SHOP-TYPE">
+						<a href="women.html">WOMEN</a>
+					</div>
+					<div class="SHOP-TYPE">
+						<a href="men.html">MEN</a>
+					</div>
+					<div class="SHOP-TYPE">
+						<a href="kids.html">KIDS</a>
+					</div>
+				</div>
+				<div id="D2">
+					<a href="track_order.html">TRACK ORDER</a>
+					<a href="contact.html">CONTACT US</a>
+
+					<span id="store">
+						<a href="https://play.google.com/store/apps/details?id=com.thesouledstore"
+							><img
+								src="https://cdn-icons-png.flaticon.com/128/8473/8473048.pn"
+								alt=""
+							/>DOWNLOAD APP</a
+						>
+					</span>
+				</div>
+			</div>
+
+			<div id="nav_box_2">
+				<div id="logo">
+					<a href="index.html"><img src="./All images/logo.png" alt="" /></a>
+				</div>
+
+				<div class="wrapper">
+					<div class="menu-area">
+						<ul>
+							<li>
+								<a href="">TOPWEAR &#x22B3; </a>
+								<ul>
+									<li><a href="">T-Shirts</a></li>
+									<li><a href="">Shirts</a></li>
+									<li><a href="">Polos</a></li>
+									<li><a href="">Hoodies</a></li>
+									<li><a href="">Jackets</a></li>
+									<li><a href="">Sweatshirts</a></li>
+									<li><a href="">Sweaters</a></li>
+									<li><a href="">Drop-Cut-Shirts</a></li>
+									<li><a href="">Co-ord Sets</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="#">BOTTOMWEAR &#x22B3;</a>
+								<ul>
+									<li><a href="">jeans</a></li>
+									<li><a href="">Cotton Pants</a></li>
+									<li><a href="">Cargos</a></li>
+									<li><a href="">Joggers</a></li>
+									<li><a href="">Shorts</a></li>
+									<li><a href="">Innerwear & Boxers</a></li>
+									<li><a href="">Pajamas</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="#">SHOES & ACCESSORIES &#x22B3;</a>
+								<ul>
+									<li><a href="">Shoes</a></li>
+									<li><a href="">Perfumes</a></li>
+									<li><a href="">Pendants</a></li>
+									<li><a href="">Socks</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="#">COLLECTIONS &#x22B3;</a>
+								<ul>
+									<li><a href="#">PRODUCT-1</a></li>
+									<li><a href="#">PRODUCT-1PRODUCT-1</a></li>
+									<li><a href="#">PRODUCT-1</a></li>
+									<li>
+										<a href="#">SHOP BY THEMES &#x22B3; </a>
+										<ul class="product_type">
+											<li><a href="#">Logo</a></li>
+											<li><a href="#">Banner</a></li>
+											<li><a href="#">Brochure</a></li>
+											<li><a href="#">Card</a></li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<!-- <li><a href="#">MEMBERSHIP</a></li> -->
+						</ul>
+					</div>
+				</div>
+
+				<div id="acc">
+					<div>
+						<div class="group">
+							<svg class="icon" aria-hidden="true" viewBox="0 0 24 24">
+								<g>
+									<path
+										d="M21.53 20.47l-3.66-3.66C19.195 15.24 20 13.214 20 11c0-4.97-4.03-9-9-9s-9 4.03-9 9 4.03 9 9 9c2.215 0 4.24-.804 5.808-2.13l3.66 3.66c.147.146.34.22.53.22s.385-.073.53-.22c.295-.293.295-.767.002-1.06zM3.5 11c0-4.135 3.365-7.5 7.5-7.5s7.5 3.365 7.5 7.5-3.365 7.5-7.5 7.5-7.5-3.365-7.5-7.5z"
+									></path>
+								</g>
+							</svg>
+							<input placeholder="Search" type="search" class="input" />
+						</div>
+					</div>
+					<div>
+						<a href="login.html"><img src="https://cdn-icons-png.flaticon.com/128/1077/1077063.png"alt=""/></a>
+					</div>
+					<div>
+						<a href="wishlist.html"><img src="https://cdn-icons-png.flaticon.com/128/1077/1077035.png"alt=""/></a>
+					</div>
+					<div>
+						<a href="cart.html"></a><img src="https://cdn-icons-png.flaticon.com/128/3977/3977561.png"alt=""/></a>
+					</div>
+				</div>
+			</div>
+		</header>
+   
+    <!-- container -->
+    <!-- container -->
+    <div id="boss">
+      <div class="slideshow-container">
+
+        <div class="mySlides fade">
+        
+          <img src="https://prod-img.thesouledstore.com/public/theSoul/storage/mobile-cms-media-prod/banner-images/Web-Banner-Stickers-17-3-23_8Yu2o7Q.jpg?format=webp&w=1366&dpr=1.0" style="width:100%">
+          
+        </div>
+        
+        <div class="mySlides fade">
+          
+          <img src="https://prod-img.thesouledstore.com/public/theSoul/storage/mobile-cms-media-prod/banner-images/Web-banner-coord-setrd.jpg?format=webp&w=1366&dpr=1.0"  style="width:100%">
+          
+        </div>
+        
+        <div class="mySlides fade">
+        
+          <img src="https://prod-img.thesouledstore.com/public/theSoul/storage/mobile-cms-media-prod/banner-images/Homepage--Banner_2_Q8eYrCr.jpg?format=webp&w=1366&dpr=1.0" style="width:100%">
+          
+        </div>
+        
+        <div class="mySlides fade">
+        
+            <img src="https://prod-img.thesouledstore.com/public/theSoul/storage/mobile-cms-media-prod/banner-images/Wardrobe-Essentials-Homepage-banner_1.jpg?format=webp&w=1366&dpr=1.0" style="width:100%">
+            
+        </div>
+
+        <div class="mySlides fade">
+        
+          <img src="https://prod-img.thesouledstore.com/public/theSoul/storage/mobile-cms-media-prod/banner-images/Web-Banner_3_dfO3xNT.jpg?format=webp&w=1366&dpr=1.0" style="width:100%">
+          
+        </div>
+
+        <div class="mySlides fade">
+        
+          <img src="https://prod-img.thesouledstore.com/public/theSoul/storage/mobile-cms-media-prod/banner-images/Web-Banner1_CsH7N8k.jpg?format=webp&w=1366&dpr=1.0" style="width:100%">
+          
+        </div>
+          
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+        
+        </div>
+        <br>
+        
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span> 
+          <span class="dot" onclick="currentSlide(2)"></span> 
+          <span class="dot" onclick="currentSlide(3)"></span> 
+          <span class="dot" onclick="currentSlide(4)"></span> 
+          <span class="dot" onclick="currentSlide(5)"></span> 
+          <span class="dot" onclick="currentSlide(6)"></span> 
+        </div>
+        
+         <div > <h2 id="collection">COLLECTIONS</h2> </div>
+        
+        
+            <div class="carousal-container1">
+                <div class="inner1">
+                  <div class="track1">
+                    <div class="card-container1">
+                      <div class="card1">
+                        <img src="https://prod-img.thesouledstore.com/public/theSoul/storage/mobile-cms-media-prod/product-images/Colllection-Tiles---Members_final_ynKADP1.jpg?format=webp&w=480&dpr=1.0" style="width: 100%;">
+                      </div>
+                    </div>
+                    <div class="card-container1">
+                      <div class="card1">
+                    <img src="https://prod-img.thesouledstore.com/public/theSoul/storage/mobile-cms-media-prod/product-images/new-arrival_K4kSjL3.jpg?format=webp&w=480&dpr=1.0" style="width: 100%;">
+            
+                      </div>
+                    </div>
+                    <div class="card-container1">
+                      <div class="card1">
+                    <img src="https://prod-img.thesouledstore.com/public/theSoul/storage/mobile-cms-media-prod/product-images/Colllection-Tile2_JiJDYsX.jpg?format=webp&w=480&dpr=1.0" style="width: 100%;">
+            
+                      </div>
+                    </div>
+                    <div class="card-container1">
+                      <div class="card1">
+                    <img src="https://prod-img.thesouledstore.com/public/theSoul/storage/mobile-cms-media-prod/product-images/Colllection-Tile1_lwye5cS.jpg?format=webp&w=480&dpr=1.0" style="width: 100%;">
+            
+                      </div>
+                    </div>
+                    <div class="card-container1">
+                      <div class="card1">
+                    <img src="https://prod-img.thesouledstore.com/public/theSoul/storage/mobile-cms-media-prod/product-images/Collection-tile_1.jpg?format=webp&w=480&dpr=1.0" style="width: 100%;">
+            
+                      </div>
+                    </div>
+                    <div class="card-container1">
+                      <div class="card1">
+                    <img src="https://prod-img.thesouledstore.com/public/theSoul/storage/mobile-cms-media-prod/product-images/shirt.jpg?format=webp&w=480&dpr=1.0" style="width: 100%;">
+            
+                      </div>
+                    </div>
+                    <div class="card-container1">
+                      <div class="card1">
+                    <img src="https://prod-img.thesouledstore.com/public/theSoul/storage/mobile-cms-media-prod/product-images/Collection-Tiles-3Option.jpg?format=webp&w=480&dpr=1.3" style="width: 100%;">
+            
+                      </div>
+                    </div>
+                    <div class="card-container1">
+                      <div class="card1" >
+                    <img src="https://prod-img.thesouledstore.com/public/theSoul/storage/mobile-cms-media-prod/product-images/Flex-with-Hardik_Collection-Tiles.jpg?format=webp&w=480&dpr=1.3"style="width: 100%;">
+            
+                      </div>
+                   
+                    </div>
+                  </div>
+                </div>
+                <div class="nav1">
+                  <button id="prev1">❮</button>
+                  <button id="next1">❯</button>
+                </div>
+              </div> 
+        
+            
+        
+        <div id="mainDiv">
+            <h2 style="text-align: center;">CATEGORIES</h2>
+            <div class="category">
+                <div class="one">
+                    <div>
+                        <img src="https://prod-img.thesouledstore.com/public/theSoul/storage/mobile-cms-media-prod/product-images/WebsiteTiles_Big_Women-version6.jpg?format=webp&w=480&dpr=1.0" style="width:100%">
+                    </div>
+                    <div>
+                        <img src="https://prod-img.thesouledstore.com/public/theSoul/storage/mobile-cms-media-prod/product-images/WebsiteTiles_Big_Women-version5.jpg?format=webp&w=480&dpr=1.0" style="width:100%">
+                    </div>
+                    <div>
+                        <img src="https://prod-img.thesouledstore.com/public/theSoul/storage/mobile-cms-media-prod/product-images/WebsiteTiles_Big_Women-version4.jpg?format=webp&w=480&dpr=1.0" style="width:100%">
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="two">
+                <div>
+                    <img src="https://prod-img.thesouledstore.com/public/theSoul/storage/mobile-cms-media-prod/product-images/WebsiteTiles_Big_Women-version3.jpg?format=webp&w=480&dpr=1.0">
+                </div>
+                <div>
+                    <img src="https://prod-img.thesouledstore.com/public/theSoul/storage/mobile-cms-media-prod/product-images/WebsiteTiles_Big_Women-version2.jpg?format=webp&w=480&dpr=1.0" style="width:100%">
+                </div>
+                <div>
+                    <img src="https://prod-img.thesouledstore.com/public/theSoul/storage/mobile-cms-media-prod/product-images/WebsiteTiles_Big_Women-versiond.jpg?format=webp&w=480&dpr=1.0" style="width:100%">
+                </div>
+                <div>
+                    <img src="https://prod-img.thesouledstore.com/public/theSoul/storage/mobile-cms-media-prod/product-images/WebsiteTiles_Small_women-version7.jpg?format=webp&w=320&dpr=1.0" style="width:100%">
+                </div>
+            </div> -->
+            <div class="three">
+                <div>
+                    <img src="https://prod-img.thesouledstore.com/public/theSoul/storage/mobile-cms-media-prod/product-images/WebsiteTiles_Small_women-version-14-02-233_kVU2vGa.jpg?format=webp&w=320&dpr=1.0" style="width: 100%;">
+                </div>
+                <div>
+                    <img src="https://prod-img.thesouledstore.com/public/theSoul/storage/mobile-cms-media-prod/product-images/Small-Tile_shorts_3_1_qH2xOZD.jpg?format=webp&w=320&dpr=1.0" style="width: 100%;">
+                </div>
+                <div>
+                    <img  src="https://prod-img.thesouledstore.com/public/theSoul/storage/mobile-cms-media-prod/product-images/WebsiteTiles_Small_women-versionc.jpg?format=webp&w=320&dpr=1.0" style="width: 100%;">
+                </div>
+                <div>
+                  <img  src="https://prod-img.thesouledstore.com/public/theSoul/storage/mobile-cms-media-prod/product-images/WebsiteTiles_Small_women-version7.jpg?format=webp&w=320&dpr=1.0" style="width: 100%;">
+              </div>
+            </div>
+            <!-- <div class="four">
+                <div>
+                    <img src="https://prod-img.thesouledstore.com/public/theSoul/storage/mobile-cms-media-prod/product-images/shorts_ul1V18Y.jpg?format=webp&w=360&dpr=1.3" style="width:100%">
+                </div>
+                <div>
+                    <img src="https://prod-img.thesouledstore.com/public/theSoul/storage/mobile-cms-media-prod/product-images/WebsiteTiles_Small_Tushar_men-version_polo_xmhSCZz.jpg?format=webp&w=360&dpr=1.3" style="width:100%">
+                </div>
+                <div>
+                    <img src="https://prod-img.thesouledstore.com/public/theSoul/storage/mobile-cms-media-prod/product-images/supimaaaa_jMYf21J.jpg?format=webp&w=360&dpr=1.3" style="width:100%">
+                </div>
+                <div>
+                    <img src="https://prod-img.thesouledstore.com/public/theSoul/storage/mobile-cms-media-prod/product-images/WebsiteTiles_Small_-Active-wear_udMmTdC.jpg?format=webp&w=360&dpr=1.3" style="width:100%">
+                </div> -->
+            </div>
+        </div>
+        <div class="official" style="margin-top: 50px;">
+            <h2 style="text-align: center; ">OFFICIAL MERCHANDISE</h2>
+        
+            <div class="carousal-container">
+                <div class="inner">
+                  <div class="track">
+                    <div class="card-container">
+                      <div class="card">
+                        <img src="https://prod-img.thesouledstore.com/public/theSoul/storage/mobile-cms-media-prod/Merchandies-images/web-icon.jpg?format=webp&w=300&dpr=1.3" style="width: 100%;">
+                      </div>
+                    </div>
+                    <div class="card-container">
+                      <div class="card">
+                        <img src="https://prod-img.thesouledstore.com/public/theSoul/storage/mobile-cms-media-prod/Merchandies-images/Marvel_Logo_268x220_b16y8nC_GKd3vRA.jpg?format=webp&w=300&dpr=1.3" style="width: 100%;">
+            
+                      </div>
+                    </div>
+                    <div class="card-container">
+                      <div class="card">
+                        <img src="https://prod-img.thesouledstore.com/public/theSoul/storage/mobile-cms-media-prod/Merchandies-images/HarryPotter_Logo_268x220_LqBAKZU_Y8BG6uT.jpg?format=webp&w=300&dpr=1.3" style="width: 100%;">
+            
+                      </div>
+                    </div>
+                    <div class="card-container">
+                      <div class="card">
+                        <img src="https://prod-img.thesouledstore.com/public/theSoul/storage/mobile-cms-media-prod/Merchandies-images/Disnety_Logo_268x220_GevoL2M_2j5PP2v.jpg?format=webp&w=300&dpr=1.3" style="width: 100%;">
+            
+                      </div>
+                    </div>
+                    <div class="card-container">
+                      <div class="card">
+                        <img src="https://prod-img.thesouledstore.com/public/theSoul/storage/mobile-cms-media-prod/Merchandies-images/DC_Logo_268x220_qtYfouo_VyuqmVD.jpg?format=webp&w=300&dpr=1.3" style="width: 100%;">
+            
+                      </div>
+                    </div>
+                    <div class="card-container">
+                      <div class="card">
+                        <img src="https://prod-img.thesouledstore.com/public/theSoul/storage/mobile-cms-media-prod/Merchandies-images/LooneyTunes_268x220_o3UJ8Y0_OPjL9nW.jpg?format=webp&w=300&dpr=1.3" style="width: 100%;">
+            
+                      </div>
+                    </div>
+                    <div class="card-container">
+                      <div class="card">
+                        <img src="https://prod-img.thesouledstore.com/public/theSoul/storage/mobile-cms-media-prod/Merchandies-images/web-icon1.jpg?format=webp&w=300&dpr=1.3" style="width: 100%;">
+            
+                      </div>
+                    </div>
+                    <div class="card-container">
+                      <div class="card">
+                        <img src="https://prod-img.thesouledstore.com/public/theSoul/storage/mobile-cms-media-prod/Merchandies-images/DC_Logo_268x220_qtYfouo_VyuqmVD_Pbz2nyW.jpg?format=webp&w=300&dpr=1.3" style="width: 100%;">
+            
+                      </div>
+                    </div>
+                    <div class="card-container">
+                      <div class="card">
+                        <img src="https://prod-img.thesouledstore.com/public/theSoul/storage/mobile-cms-media-prod/Merchandies-images/StarWars_268x220_sPJGI16_ODbjkHD.jpg?format=webp&w=300&dpr=1.3" style="width: 100%;">
+            
+                      </div>
+                    </div>
+                    <div class="card-container">
+                      <div class="card">
+                        <img src="https://prod-img.thesouledstore.com/public/theSoul/storage/mobile-cms-media-prod/Merchandies-images/Rick_Morty_268x220_4283QPV.jpg?format=webp&w=300&dpr=1.3" style="width: 100%;">
+            
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="nav">
+                  <button id="prev">❮</button>
+                  <button id="next">❯</button>
+                </div>
+              </div>
+        
+        
+              <h2 style="text-align: center ; margin-top: 70px; margin-bottom: 45px;">TOP SELLING</h2>
+        <div class="top-selling">
+            <div class="cloths">
+                <div class="zoom">
+                    <img src="https://prod-img.thesouledstore.com/public/theSoul/storage/mobile-cms-media-prod/product-images/dc-girl_S4X3LZa.jpg?format=webp&w=320&dpr=1.0" style="width: 100%;">
+                    <p>DC: Girl Gang</p>
+                    <hr>
+                    <p>Shirt</p>
+                    <p>999</p>  
+                </div>
+                <div class="zoom">
+                    <img src="https://prod-img.thesouledstore.com/public/theSoul/storage/mobile-cms-media-prod/product-images/green-trouser_ODzwk4n.jpg?format=webp&w=320&dpr=1.0" style="width: 100%;">
+                    <p>Solids: Green</p>
+                    <hr>
+                    <p>Joggers</p>
+                    <p>1799</p>
+                </div>
+                <div class="zoom">
+                    <img src="https://prod-img.thesouledstore.com/public/theSoul/storage/mobile-cms-media-prod/product-images/Top-selling-tile_1_O8B6pyW.jpg?format=webp&w=320&dpr=1.0" style="width: 100%;">
+                    <p>Daisey</p>
+                      <hr>
+                    <p>Braletts</p>
+                    <p>648</p>
+                </div>
+                <div class="zoom">
+                    <img src="https://prod-img.thesouledstore.com/public/theSoul/storage/mobile-cms-media-prod/product-images/save-the-tiger_1_7rCIux5.jpg?format=webp&w=320&dpr=1.0" style="width: 100%;">
+                    <p>Save the Tiger</p>
+                    <hr>
+                    <p>Oversized t-shirts</p>
+                    <p>1199</p>
+                </div>
+            </div>
+        </div>
+        <h2 style="text-align: center; margin-top: 30px;">MEMBERSHIP</h2>
+        <div class="membership" style="margin-top: 50px;">
+            <img src="https://prod-img.thesouledstore.com/public/theSoul/storage/mobile-cms-media-prod/banner-images/Exclusive-Members-Tile_Desktop.jpg?format=webp&w=1500&dpr=1.3" style='width: 99%; margin-left: 3px;'>
+        </div>
+        
+        
+        <!-- <h2 style="text-align: center; margin-top: 40px;">STRAIGHT OUT OF CELEBRITY CLOSETS</h2>
+        <div class="celebrity" style="margin-top: 50px;">
+            <img src="https://prod-img.thesouledstore.com/public/theSoul/storage/mobile-cms-media-prod/banner-images/Homepage_Banner_hardik_1.jpg?format=webp&w=1500&dpr=1.3" style='width: 99%; margin-left: 3px;'>
+        </div> -->
+        </body>
+        
+        <div class="redtag">
+            <h1>HOMEGROWN INDIAN BRAND</h1>
+        </div>
+        <div class="downtext">
+            <h1>Over 5.5 Million Happy Customers</h1>
+        </div>
     </div>
-    <!-- Use this Select Tag for Filtering the Products  -->
-    <!-- <select id="filter">
-      <option value="">Filter By Category</option>
-      <option value="Laptop">Laptop</option>
-      <option value="Mobile">Mobile</option>
-      <option value="Speakers">Speakers</option>
-    </select> -->
-    <div id="product-container">
-      <!-- Here Append All the Products  -->
+
+
+    <!-- footer -->
+    <div>
+      <div id="footer">
+        <div class="1">
+          <ul>
+            <li><a href="#">NEED HELP</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Track Order</a></li>
+            <li><a href="#">Returns & Refunds</a></li>
+            <li><a href="#">FAQs</a></li>
+            <li><a href="#">My Account</a></li>
+          </ul>
+        </div>
+        <div class="2">
+          <ul>
+            <li><a href="#">COMPANY</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Career</a></li>
+            <li><a href="#">Store Near Me</a></li>
+            <li><a href="#">From The Soul</a></li>
+            <li><a href="#">Souled Army</a></li>
+          </ul>
+        </div>
+        <div class="three">
+          <ul>
+            <li><a href="#">MORE INFO</a></li>
+            <li><a href="#">T&C</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Site Map</a></li>
+            <li>.</li>
+            <li>.</li>
+          </ul>
+        </div>
+        <div class="four">
+          <ul>
+            <li><a href="#">COD Available</a></li>
+            <li><a href="#">30 Days Return Policy</a></li>
+            <li>.</li>
+            <li>.</li>
+            <li>.</li>
+            <li>.</li>
+          </ul>
+        </div>
+      </div>
+      <div id="footer-img">
+        <img src="./image/footer img.png" alt="">
+      </div>
+      <div id="copyright">
+        <h4>© The Souled Store 2023-24</h4>
+      </div>
     </div>
+
   </body>
   <script>
     // Write all necessery JS here
-    const APIURL = `https://weary-bee-train.cyclic.app/women`;
-    let fetchedData = [];
-    const container = document.getElementById("product-container");
-    const selectFilter = document.getElementById("filter");
+    // const APIURL = `https://weary-bee-train.cyclic.app/women`;
+    // let fetchedData = [];
+    // const container = document.getElementById("product-container");
+    // const selectFilter = document.getElementById("filter");
 
-    FetchDataAsync()
-    async function FetchDataAsync(){
-      try{
-        let res = await fetch(APIURL);
-        let data = await res.json();
-        fetchedData = data.data;
-        console.log(data)
-        DisplayProduct(data);
-      }
-      catch(error){
-        console.log(error);
-      }
-    }
+    // FetchDataAsync()
+    // async function FetchDataAsync(){
+    //   try{
+    //     let res = await fetch(APIURL);
+    //     let data = await res.json();
+    //     fetchedData = data.data;
+    //     console.log(data)
+    //     DisplayProduct(data);
+    //   }
+    //   catch(error){
+    //     console.log(error);
+    //   }
+    // }
 
 
-    let CartArr = JSON.parse(localStorage.getItem("cart"))||[];
+    // let CartArr = JSON.parse(localStorage.getItem("cart"))||[];
 
-    function DisplayProduct(data){
-      container.innerHTML = "";
-      data.forEach((ele)=>{
-        const product = document.createElement("div");
+    // function DisplayProduct(data){
+    //   container.innerHTML = "";
+    //   data.forEach((ele)=>{
+    //     const product = document.createElement("div");
 
-        const image = document.createElement("img");
-        image.setAttribute("src",ele.avatar);
+    //     const image = document.createElement("img");
+    //     image.setAttribute("src",ele.avatar);
 
-        const name = document.createElement("h3");
-        name.textContent = ele.name;
+    //     const name = document.createElement("h3");
+    //     name.textContent = ele.name;
 
-        const price = document.createElement("h4");
-        price.textContent = "$ "+ele.price;
+    //     const price = document.createElement("h4");
+    //     price.textContent = "$ "+ele.price;
 
-        const desc = document.createElement("p");
-        desc.innerText = ele.Description;
+    //     const desc = document.createElement("p");
+    //     desc.innerText = ele.Description;
 
-        const button = document.createElement("button");
-        button.textContent = "Add to Cart";
-          button.addEventListener("click",function(){
-            if(checkDuplicate(ele)){
-              alert("Product Already in Cart");
-            }
-            else{
-              CartArr.push({...ele,quantity:1})
-              localStorage.setItem("cart",JSON.stringify(CartArr))
-              alert("Product Added to Cart");
-            }
-          })
-        product.append(image,name,price,desc,button)
-        container.append(product)
-      })
-    }
+    //     const button = document.createElement("button");
+    //     button.textContent = "Add to Cart";
+    //       button.addEventListener("click",function(){
+    //         if(checkDuplicate(ele)){
+    //           alert("Product Already in Cart");
+    //         }
+    //         else{
+    //           CartArr.push({...ele,quantity:1})
+    //           localStorage.setItem("cart",JSON.stringify(CartArr))
+    //           alert("Product Added to Cart");
+    //         }
+    //       })
+    //     product.append(image,name,price,desc,button)
+    //     container.append(product)
+    //   })
+    // }
 
-    selectFilter.addEventListener("change",()=>{
-      if(selectFilter.value===""){
-        DisplayProduct(fetchedData)
-      }
-      else{
-        let filtered = fetchedData.filter((ele)=>{
-        return ele.category === selectFilter.value;
-        });
-        DisplayProduct(filtered);
-      }
+    // selectFilter.addEventListener("change",()=>{
+    //   if(selectFilter.value===""){
+    //     DisplayProduct(fetchedData)
+    //   }
+    //   else{
+    //     let filtered = fetchedData.filter((ele)=>{
+    //     return ele.category === selectFilter.value;
+    //     });
+    //     DisplayProduct(filtered);
+    //   }
       
-    });
+    // });
 
-    function checkDuplicate(ele){
-      for(let i=0; i<CartArr.length; i++){
-        if(CartArr[i].id===ele.id){
-          return true;
-        }
-      }
-      return false;
-    }
+    // function checkDuplicate(ele){
+    //   for(let i=0; i<CartArr.length; i++){
+    //     if(CartArr[i].id===ele.id){
+    //       return true;
+    //     }
+    //   }
+    //   return false;
+    // }
     
 
   </script>
