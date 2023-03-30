@@ -118,7 +118,7 @@ function getCard(id,img,name,price,cat){
     let cart = document.createElement('i')
     cart.setAttribute('class','fa-solid fa-bag-shopping')
     cart.classList.add('btn')
-    cart.style.color='red'
+    cart.style.color='rgba(219, 48, 82, 1)'
 
     
     cardBtn.append(cart)

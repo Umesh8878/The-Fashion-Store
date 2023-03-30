@@ -363,3 +363,6 @@ main{
     margin-top: 20px;
   }
 
+  .card-btn:hover{
+	cursor: pointer;
+}
