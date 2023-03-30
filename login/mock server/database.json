@@ -1,0 +1,93 @@
+{
+  "post": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "commit": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "post_id": 1
+    }
+  ],
+  "profile": [
+    {
+      "name": "typicode"
+    }
+  ],
+  "user": [
+    {
+      "username": "admin",
+      "password": "admin",
+      "id": 1,
+      "email": "patelnirmal9977@gmail.com"
+    },
+    {
+      "firstname": "agdhasdg",
+      "lastname": "adsdas",
+      "email": "dshgfgahg@gmail.com",
+      "password": "1234567",
+      "confirm_password": "123456",
+      "mobile": "123434554",
+      "id": 2
+    },
+    {
+      "firstname": "Nirmal",
+      "lastname": "Patel",
+      "email": "nirmalpatel9977@gmail.com",
+      "password": "123456",
+      "confirm_password": "123456",
+      "mobile": "9977296766",
+      "id": 3
+    },
+    
+    {
+      "firstname": "m",
+      "lastname": "y",
+      "email": "my@gmail.com",
+      "password": "12345",
+      "confirm_password": "123456",
+      "mobile": "12345678",
+      "id": 4
+    },
+    {
+      "firstname": "n",
+      "lastname": "p",
+      "email": "np@gmail.com",
+      "password": "12345",
+      "confirm_password": "12345",
+      "mobile": "123456789",
+      "id": 5
+    },
+    {
+      "firstname": "M",
+      "lastname": "p",
+      "email": "mp@gmail.com",
+      "password": "123456",
+      "confirm_password": "123456",
+      "mobile": "123456789",
+      "id": 6
+    },
+    {
+      "firstname": "P",
+      "lastname": "K",
+      "email": "pk@gmail.com",
+      "password": "12213",
+      "confirm_password": "124342",
+      "mobile": "132234345",
+      "id": 7
+    },
+    {
+      "firstname": "m",
+      "lastname": "j",
+      "email": "mj@gmail.com",
+      "password": "123423",
+      "confirm_password": "12342",
+      "mobile": "1232343565",
+      "id": 8
+    }
+  ]
+}
