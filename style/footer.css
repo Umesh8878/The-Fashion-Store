@@ -1,0 +1,85 @@
+body {
+    margin: 0;
+    padding: 0;
+  }
+
+  #footer {
+    display: flex;
+    background-color: #e0e0e0;
+    padding: 10px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+  }
+
+  #footer > div {
+    width: 18%;
+    margin: auto;
+    padding-right: 20px;
+  }
+
+  #footer > div > ul > li {
+    list-style: none;
+    padding-top: 10px;
+  }
+
+  #footer > div > ul > li > a {
+    text-decoration: none;
+    color: #717171;
+    font-weight: bold;
+    font-size: 80%;
+  }
+
+  #footer > div > ul > li > a:hover {
+    color: red;
+  }
+
+  #footer > div > ul > li:first-child > a {
+    color: red;
+    font-weight: bold;
+    font-size: 120%;
+  }
+
+  #footer > .four > ul > li:first-child > a {
+    color: #717171;
+  }
+
+  #footer > .four > ul > li:nth-child(3) > a {
+    color: transparent;
+  }
+
+  #footer-img {
+    width: 100%;
+    background-color: #e5e3e3ea;
+  }
+
+  #footer-img img {
+    width: 100%;
+  }
+
+  #copyright {
+    background-color: #e5e3e3ea;
+    padding: 20px;
+    text-align: center;
+    color: #717171;
+    font-weight: bold;
+    font-size: 80%;
+  }
+
+  /* Responsive styles */
+  @media screen and (max-width: 768px) {
+    #footer > div {
+      width: 50%;
+      padding-left: 0px;
+      padding-bottom: 20px;
+      text-align: center;
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    #footer > div {
+      width: 100%;
+      padding-bottom: 20px;
+      text-align: center;
+      padding-right: 0px;
+    }
+  }
