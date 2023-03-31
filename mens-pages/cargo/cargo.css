@@ -252,6 +252,7 @@ body {
 .card-btn{
     display: flex;
     align-items: center;
+	font-size: 30px;
 }
 
 .card{
@@ -327,7 +328,7 @@ main{
     color: transparent;
 }
 #copyright{
-    width: 100%;
+    width: 94.5%;
     background-color: #e5e3e3ea;
     padding: 20px;
 }
@@ -340,7 +341,7 @@ main{
     font-size: 80%;
 }
 #footer-img{
-    width: 100%;
+    width: 97%;
     background-color: #e5e3e3ea;
 }
 .redtag{

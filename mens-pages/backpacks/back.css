@@ -7,12 +7,15 @@ body {
 /* #For Tab view */
 @media only screen and (max-width: 1000px) {
 	/* Medium Screen  */
+	
+
 }
 
 /* #For Mobile view */
 
 @media only screen and (max-width: 600px) {
 	/* Small Screen  */
+	
 }
 
 /* ########## nav_box_1 ############# */
@@ -252,6 +255,7 @@ body {
 .card-btn{
     display: flex;
     align-items: center;
+	font-size: 30px;
 }
 
 .card{
