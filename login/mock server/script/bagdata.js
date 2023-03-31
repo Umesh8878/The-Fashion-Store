@@ -45,7 +45,7 @@ function appendbag(data){
      </div>
    </div>
    <div class="bag-data-right">
-   <h3>₹ ${el.price}</h3>
+   <h3 id="actual_price"> ${el.price}</h3>
    <p>Member Discount:₹ 50</p>
    </div>
 
@@ -62,11 +62,18 @@ function appendbag(data){
      
 
     left_bag_list.innerHTML=x;
-    let qty_list=document.querySelector("#qty_list");
-    console.log(qty_list.value);
+   
+
+   
 
 }
+let actual_price=document.querySelector("#actual_price");
+let qty_list=document.querySelector("#qty_list");
 
-
+qty_list.addEventListener("change",()=>{
+  console.log(qty_list.value);
+  console.log(+actual_price.textContent);
+  console.log()
+})
 
 
