@@ -10,7 +10,6 @@ let mobile_num=document.querySelector(".mobile_number_list");
 let register=JSON.parse(localStorage.getItem("register"))||[];
 formdata.addEventListener("submit",(e)=>{
     e.preventDefault();
-   if(password.value==confirm_password.value){
     let dataobj={
       firstname:firstname.value,
       lastname:lastname.value,
@@ -19,12 +18,49 @@ formdata.addEventListener("submit",(e)=>{
       confirm_password:confirm_password.value,
       mobile:mobile_num.value
   }
-   register.push(dataobj)
-  localStorage.setItem("register",JSON.stringify(register));
+   if(duplicat(dataobj)){
+    Swal.fire({
+      icon: 'error',
+      title: 'Oops...',
+      text: 'USER IS ALREADY EXISTS',
+    
+    })
+    formdata.reset();
    }else{
-    alert("Enter Correct Password")
+    if(password.value==confirm_password.value){
+    
+     register.push(dataobj)
+    localStorage.setItem("register",JSON.stringify(register));
+    Swal.fire({
+      icon: 'success',
+      title: 'Congratulations',
+      text: 'REGISRATION IS SUCCESSFUL',
+    
+    })
+    formdata.reset();
+     }else{
+      Swal.fire({
+        icon: 'error',
+        title:  'Oops...',
+        text: 'ENTER CURRECT PASSWORD',
+      
+      })
+      formdata.reset();
+     }
    }
    
 })
 
 
+function duplicat(element){
+  for(let i=0; i<register.length; i++){
+      console.log(register[i])
+    if(register[i].mobile==element.mobile){
+      return true;
+    }else  if(register[i].email==element.email){
+      return true;
+    }
+    
+  }
+  return false;
+}

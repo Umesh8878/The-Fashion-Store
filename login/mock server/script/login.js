@@ -5,11 +5,29 @@ let username=document.querySelector("#username_list")
 let register=JSON.parse(localStorage.getItem("register"))||[];
 formdata.addEventListener("submit",(e)=>{
    e.preventDefault();
+
    register= register.filter((elem)=>{
       return number.value==elem.mobile&&password.value==elem.password;
    })
    
-  console.log(register);
+  if(register==""){
+    Swal.fire({
+        icon: 'error',
+        title: 'Oops...',
+        text: 'PLEASE ENTER CORRECT PASSWORD',
+      
+      })
+      formdata.reset();
+      console.log(register)
+  }else{
+    Swal.fire({
+        icon: 'success',
+        title: 'Congratulation',
+        text: 'LOGIN SUCCESSFUL',
+      
+      })
+      formdata.reset();
+  }
   usernameappend(register)
   
 })
