@@ -204,3 +204,22 @@ function check2(id){
     }
     return false;
 }
+
+let filter = document.querySelector('.section')
+
+let high = document.getElementById('high')
+
+let low = document.getElementById('low')
+
+let btn = document.querySelector('.f-btn')
+
+btn.addEventListener('click', ()=>{
+
+	
+	if(high){
+		fetchUser(`https://weary-bee-train.cyclic.app/women?user_category_section=perfumes&_sort=price&_order=asc`)
+	}
+	if(low){
+		fetchUser(`https://weary-bee-train.cyclic.app/women?user_category_section=perfumes&_sort=price&_order=desc`)
+	}
+})

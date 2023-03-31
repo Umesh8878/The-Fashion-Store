@@ -363,3 +363,181 @@ main{
   .card-btn:hover{
 	cursor: pointer;
 }
+/* ....................................... */
+.filter {
+	/* border: 1px solid black; */
+	width: 15.4%;
+}
+
+main {
+	width: 97%;
+	display: flex;
+	justify-content: space-between;
+}
+
+/* ################# filter ############### */
+input {
+	outline: none;
+	border: none;
+}
+input::placeholder {
+	color: black;
+	font-weight: bold;
+}
+.multi-selector {
+	width: max-content;
+	/* margin-bottom: 5px; */
+}
+.select-field {
+	border: 1px solid rgb(187, 187, 187);
+}
+.select-field,
+.task,
+.list {
+	width: 100%;
+	background-color: white;
+	padding: 0.3rem;
+}
+.list {
+	box-shadow: 0 30px 60px rgb(0, 0, 0, 0.2);
+	display: none;
+}
+.down-arrow {
+	font-size: 1.2rem;
+	display: inline-block;
+	cursor: pointer;
+	font-weight: bold;
+	transition: 0.2s linear;
+}
+.task {
+	display: block;
+	padding-left: 0;
+}
+.task span {
+	float: right;
+	font-size: 0.6rem;
+	padding-top: 6px;
+}
+.task:hover {
+	background-color: aliceblue;
+}
+.show {
+	display: block;
+}
+.rotate180 {
+	transform: rotate(-60deg);
+}
+
+/* ....................... */
+.select-field2 {
+	border: 1px solid rgb(187, 187, 187);
+}
+.select-field2,
+.task,
+.list2 {
+	width: 100%;
+	background-color: white;
+	padding: 0.3rem;
+}
+.list2 {
+	box-shadow: 0 30px 60px rgb(0, 0, 0, 0.2);
+	display: none;
+}
+.down-arrow2 {
+	font-size: 1.2rem;
+	display: inline-block;
+	cursor: pointer;
+	font-weight: bold;
+	transition: 0.2s linear;
+}
+.task {
+	display: block;
+	padding-left: 0;
+}
+.task span {
+	float: right;
+	font-size: 0.6rem;
+	padding-top: 6px;
+}
+.task:hover {
+	background-color: aliceblue;
+}
+.show {
+	display: block;
+}
+.rotate180 {
+	transform: rotate(-60deg);
+}
+
+.select-field3 {
+	border: 1px solid rgb(187, 187, 187);
+}
+.select-field3,
+.task,
+.list3 {
+	width: 100%;
+	background-color: white;
+	padding: 0.3rem;
+}
+.list3 {
+	box-shadow: 0 30px 60px rgb(0, 0, 0, 0.2);
+	display: none;
+}
+.down-arrow3 {
+	font-size: 1.2rem;
+	display: inline-block;
+	cursor: pointer;
+	transition: 0.2s linear;
+	font-weight: bold;
+}
+.task {
+	display: block;
+	padding-left: 0;
+}
+.task span {
+	float: right;
+	font-size: 0.6rem;
+	padding-top: 6px;
+}
+.task:hover {
+	background-color: aliceblue;
+}
+.show {
+	display: block;
+}
+.rotate180 {
+	transform: rotate(-60deg);
+}
+/* ################################# */
+
+#section {
+	width: 89.5%;
+	height: 35px;
+	color: #000000;
+	font-weight: bold;
+	padding: 3px;
+	border: 1.3px solid rgb(175, 173, 173);
+}
+
+/* ################ button ########## */
+
+#filter-btn {
+	/* border: 1px solid black; */
+	display: flex;
+	justify-content: space-around;
+	width: 88.4%;
+	margin-top: 10px;
+}
+
+.f-btn {
+	width: 90px;
+	height: 45px;
+	font-weight: bold;
+	color: rgb(22, 96, 96);
+	border: 2px solid rgb(21, 102, 102);
+	border-radius: 5px;
+}
+.f-btn:hover {
+	background-color: rgb(39, 108, 108);
+	color: white;
+}

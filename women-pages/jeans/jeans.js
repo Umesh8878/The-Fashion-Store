@@ -213,3 +213,39 @@ function check2(id){
     }
     return false;
 }
+
+
+document.querySelector('.select-field').addEventListener('click', () => {
+	document.querySelector('.list').classList.toggle('show')
+	document.querySelector('.down-arrow').classList.toggle('rotate180')
+})
+
+document.querySelector('.select-field2').addEventListener('click', () => {
+	document.querySelector('.list2').classList.toggle('show')
+	document.querySelector('.down-arrow2').classList.toggle('rotate180')
+})
+
+document.querySelector('.select-field3').addEventListener('click', () => {
+	document.querySelector('.list3').classList.toggle('show')
+	document.querySelector('.down-arrow3').classList.toggle('rotate180')
+})
+
+
+let filter = document.querySelector('.section')
+
+let high = document.getElementById('high')
+
+let low = document.getElementById('low')
+
+let btn = document.querySelector('.f-btn')
+
+btn.addEventListener('click', ()=>{
+
+	
+	if(high){
+		fetchUser(`https://weary-bee-train.cyclic.app/women?user_category_section=jeans&_sort=price&_order=asc`)
+	}
+	if(low){
+		fetchUser(`https://weary-bee-train.cyclic.app/women?user_category_section=jeans&_sort=price&_order=desc`)
+	}
+})

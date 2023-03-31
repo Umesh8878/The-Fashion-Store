@@ -125,13 +125,7 @@ body {
 	position: relative;
 	max-width: 190px;
 }
-.group {
-	display: flex;
-	line-height: 28px;
-	align-items: center;
-	position: relative;
-	max-width: 190px;
-}
+
 
 .input {
 	width: 100%;
