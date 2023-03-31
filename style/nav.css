@@ -106,8 +106,8 @@ body {
 }
 
 #acc {
-	margin-right: 25px;
-	width: 22%;
+	margin-right: 20px;
+	width: 30%;
 	height: 60px;
 	/* border: 1px solid black; */
 	display: flex;
@@ -173,7 +173,7 @@ body {
 	font-family: Poppins;
 }
 .wrapper {
-	width: 75%;
+	width:75%;
 	margin: auto;
 	/* border: 1px solid black; */
 }
@@ -226,4 +226,10 @@ body {
 	position: absolute;
 	left: 100%;
 	top: 0;
+}
+.username_list>h1{
+    text-decoration: none;
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: aqua;
 }
