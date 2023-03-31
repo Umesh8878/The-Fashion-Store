@@ -19,9 +19,6 @@ function fetchUser(url){
             console.log(data)
             let cardList = getCardList(data)
             mainSection.append(cardList)
-           
-            let cardList2 = getCardList2(data)
-            mainSection2.append(cardList2)
           })
           .catch((error)=>{
            console.log('error')
@@ -36,34 +33,21 @@ function getCardList(data){
         let cardList = document.createElement('div')
         cardList.classList.add('card-list')
 
-        
-
         data.forEach((ele)=>{
 
-            console.log(ele.user_category_section)
+            if(ele.user_section=='kids'){
 
-            if(ele.user_category_section=='hoddies&jackets'){
+                let card = getCard(
+                    ele.id,
+                    ele.avatar,
+                    ele.name,
+                    ele.price,
+                    ele.user_category
 
-                
-
-                    let card = getCard(
-                        ele.id,
-                        ele.avatar,
-                        ele.name,
-                        ele.price,
-                        ele.user_category
-    
-                    )
-                    cardList.append(card)
-
-                
-
-                
+                )
+                cardList.append(card)
             }
         })
-
-
-
         
         return cardList
 }
@@ -76,11 +60,9 @@ function getCard(id,img,name,price,cat){
     card.classList.add('card')
     card.setAttribute('data-id', id)
 
-
     let heart = document.createElement('i')
     heart.setAttribute('class','fa-regular fa-heart')
     heart.setAttribute('id','heart')
-    
     
   
     let cardImg = document.createElement('div')
@@ -111,6 +93,7 @@ function getCard(id,img,name,price,cat){
     category.innerText = cat
     category.classList.add('category')
 
+   
 
     let cardBtn = document.createElement('div')
     cardBtn.setAttribute('class','card-btn')
@@ -119,8 +102,8 @@ function getCard(id,img,name,price,cat){
     cart.setAttribute('class','fa-solid fa-bag-shopping')
     cart.classList.add('btn')
     cart.style.color='rgba(219, 48, 82, 1)'
-
     
+
     cardBtn.append(cart)
     cardDesc.append(title,cost,category)
     cardBody.append(cardDesc,cardBtn)

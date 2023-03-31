@@ -1,7 +1,6 @@
 let mainSection = document.getElementById('products')
 let api = `https://weary-bee-train.cyclic.app/kids`
 
-
 let cart_item = JSON.parse(localStorage.getItem('cart-item'))||[]
 
 let wish_list = JSON.parse(localStorage.getItem('wish-item'))||[]
@@ -29,14 +28,13 @@ function fetchUser(url){
 
 function getCardList(data){
 
-
         mainSection.innerHTML = null
         let cardList = document.createElement('div')
         cardList.classList.add('card-list')
 
         data.forEach((ele)=>{
 
-            if(ele.user_category_section=='perfumes'){
+            if(ele.user_section=='kids'){
 
                 let card = getCard(
                     ele.id,
@@ -44,7 +42,6 @@ function getCardList(data){
                     ele.name,
                     ele.price,
                     ele.user_category
-
                 )
                 cardList.append(card)
             }
@@ -110,6 +107,7 @@ function getCard(id,img,name,price,cat){
     cardBody.append(cardDesc,cardBtn)
     cardImg.append(image)
     card.append(cardImg,cardBody,heart)
+
 
     heart.addEventListener('click',()=>{
 

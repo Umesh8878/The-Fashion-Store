@@ -13,46 +13,30 @@
     background-size: contain;
     background-repeat: no-repeat;
     position: relative;
+    padding: 7%;
+}
+h1{
+    margin-bottom: 30px;
+    text-align: center;
+    color: black;
+    text-shadow: 5px white;
 }
 a{
     text-decoration: none;
 }
-.nav{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    gap: 10px;
-    /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    padding: 15px;
-    height: 10%;
-    color: blue;
-    background-color: red;
-}
-/* .name{
-    background-color: rgb(126, 185, 219);
-    text-align: center;
-    width: 20%;
-    margin-left: 20%;
-    height: 10%;
-    margin-top: 3%;
-    color: darkblue;
-    font-size: 70px;
-} */
+
 #submit:hover{
     background-color: red;
     cursor: pointer;
 }
 form{
-    width: 25%;
-    height: 40%;
-    border: solid black;
+    margin-top: 10vh;
+    width: 40%;
+    height: 50vh;
     margin: auto;
-    margin-top: 12%;
-    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     padding: 40px;
     /* border-radius: 10px; */
-    background-color: pink;
+    background-color: transparent;
     border-radius: 0%;
     text-align: center;
     
@@ -61,7 +45,6 @@ form>h2{
   text-align: center;
   font-size: 20px;
   margin-top: -10%;
-
 }
 form>input{
     height: 15%;
@@ -70,6 +53,13 @@ form>input{
     border: none;
     /* background-color: rgb(53, 4, 4); */
     border-radius: 30%;
-    margin: 5px 0px;
+    margin: 20px 0px;
     width: 100%;
 }
+
+#submit{
+    background-color: red;
+}
+ #submit:hover{
+    background-color: rgb(241, 163, 163);
+ }
