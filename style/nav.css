@@ -227,7 +227,7 @@ body {
 	left: 100%;
 	top: 0;
 }
-.username_list>h1{
+#username_list>a{
     text-decoration: none;
     color: black;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
