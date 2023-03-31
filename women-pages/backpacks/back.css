@@ -245,6 +245,7 @@ body {
 .card-btn{
     display: flex;
     align-items: center;
+	font-size: 30px;
 }
 
 .card{
