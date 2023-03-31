@@ -1,5 +1,5 @@
 let mainSection = document.getElementById('products')
-let api = `https://weary-bee-train.cyclic.app/kids`
+let api = `https://weary-bee-train.cyclic.app/Kids`
 
 let cart_item = JSON.parse(localStorage.getItem('cart-item'))||[]
 
@@ -28,14 +28,13 @@ function fetchUser(url){
 
 function getCardList(data){
 
-
         mainSection.innerHTML = null
         let cardList = document.createElement('div')
         cardList.classList.add('card-list')
 
         data.forEach((ele)=>{
 
-            if(ele.user_section=='kids'){
+            if(ele.user_section=='Kids' && ele.user_category==="Girls"){
 
                 let card = getCard(
                     ele.id,
@@ -43,7 +42,6 @@ function getCardList(data){
                     ele.name,
                     ele.price,
                     ele.user_category
-
                 )
                 cardList.append(card)
             }
@@ -109,6 +107,7 @@ function getCard(id,img,name,price,cat){
     cardBody.append(cardDesc,cardBtn)
     cardImg.append(image)
     card.append(cardImg,cardBody,heart)
+
 
     heart.addEventListener('click',()=>{
 
@@ -203,3 +202,38 @@ function check2(id){
     }
     return false;
 }
+
+document.querySelector('.select-field').addEventListener('click', () => {
+	document.querySelector('.list').classList.toggle('show')
+	document.querySelector('.down-arrow').classList.toggle('rotate180')
+})
+
+document.querySelector('.select-field2').addEventListener('click', () => {
+	document.querySelector('.list2').classList.toggle('show')
+	document.querySelector('.down-arrow2').classList.toggle('rotate180')
+})
+
+document.querySelector('.select-field3').addEventListener('click', () => {
+	document.querySelector('.list3').classList.toggle('show')
+	document.querySelector('.down-arrow3').classList.toggle('rotate180')
+})
+
+
+
+let high = document.getElementById('high')
+
+let low = document.getElementById('low')
+
+let btn = document.querySelector('.f-btn')
+
+
+btn.addEventListener('click', ()=>{
+
+  if(high){
+		fetchUser(`https://weary-bee-train.cyclic.app/Kids?user_category=Girls&_sort=price&_order=asc`)
+	}
+	if(low){
+		fetchUser(`https://weary-bee-train.cyclic.app/Kids?user_category=Girls&_sort=price&_order=desc`)
+	}
+  
+})
