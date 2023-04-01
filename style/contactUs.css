@@ -175,6 +175,32 @@ select {
   vertical-align: middle;
 
 }
+#sixthdiviii{
+  border: dotted red;
+  /* display: flex; */
+  /* grid-template-rows: auto; */
+}
+/* img{
+  display: block;
+  size: 100%;
+  width: 3%;
+  height: 100%;
+  text-align: center;
+} */
+#sixthdiviii>div{
+  border: dotted red;
+  /* display: flex; */
+}
+#insidesixthdiviii{
+  border: solid rebeccapurple;
+  display: flex;
+  flex-direction: row;
+  width: 30%;
+}
+#insidesixthdiviii>img{
+  size: 100%;
+  height: 5%;
+}
 
 
 
