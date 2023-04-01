@@ -163,7 +163,8 @@ function getCard(id,img,name,price,cat){
             image:img,
             title:name,
             price:price,
-            category:cat
+            category:cat,
+            quantity:1
           }
     
           cart_item.push(obj)
