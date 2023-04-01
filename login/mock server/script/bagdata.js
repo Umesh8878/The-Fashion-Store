@@ -194,4 +194,6 @@ function billdetails(billdata){
  
 // })
 
+
 // {/* <h3 id="actual_price"> ${el.price}</h3> */}
+
