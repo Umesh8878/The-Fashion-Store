@@ -1,0 +1,214 @@
+body {
+	width: 50%;
+	border: 1px solid black;
+	height: 100vh;
+}
+
+#n1 img {
+	margin-left: 5px;
+	width: 120px;
+	height: 95px;
+}
+
+#n2 {
+	margin: auto;
+	width: 95%;
+	display: flex;
+	box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+		rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+	height: 40px;
+	justify-content: space-around;
+	align-items: center;
+	border-radius: 5px;
+	margin-bottom: 30px;
+}
+#n2 a {
+	text-decoration: none;
+	color: black;
+	font-weight: bold;
+}
+
+/* ######################################################### */
+
+.filter {
+	/* border: 1px solid black; */
+	width: 15.4%;
+	margin-left: 19px;
+}
+
+input {
+	outline: none;
+	border: none;
+}
+input::placeholder {
+	color: black;
+	font-weight: bold;
+}
+.multi-selector {
+	width: max-content;
+	margin-bottom: 8px;
+}
+.select-field {
+	border: 1px solid rgb(187, 187, 187);
+	border: none;
+}
+.select-field,
+.task,
+.list {
+	width: 100%;
+	background-color: white;
+	padding: 0.3rem;
+}
+.list {
+	box-shadow: 0 30px 60px rgb(0, 0, 0, 0.2);
+	display: none;
+}
+.down-arrow {
+	font-size: 1.2rem;
+	display: inline-block;
+	cursor: pointer;
+	font-weight: bold;
+	transition: 0.2s linear;
+}
+.task {
+	display: block;
+	padding-left: 0;
+}
+.task span {
+	float: right;
+	font-size: 0.6rem;
+	padding-top: 6px;
+}
+.task:hover {
+	background-color: aliceblue;
+}
+.show {
+	display: block;
+}
+.rotate180 {
+	transform: rotate(-60deg);
+}
+
+/* ....................... */
+.select-field2 {
+	border: 1px solid rgb(187, 187, 187);
+	border: none;
+}
+.select-field2,
+.task,
+.list2 {
+	width: 100%;
+	background-color: white;
+	padding: 0.3rem;
+}
+.list2 {
+	box-shadow: 0 30px 60px rgb(0, 0, 0, 0.2);
+	display: none;
+}
+.down-arrow2 {
+	font-size: 1.2rem;
+	display: inline-block;
+	cursor: pointer;
+	font-weight: bold;
+	transition: 0.2s linear;
+}
+.task {
+	display: block;
+	padding-left: 0;
+}
+.task span {
+	float: right;
+	font-size: 0.6rem;
+	padding-top: 6px;
+}
+.task:hover {
+	background-color: aliceblue;
+}
+.show {
+	display: block;
+}
+.rotate180 {
+	transform: rotate(-60deg);
+}
+
+.select-field3 {
+	/* border: 1px solid rgb(187, 187, 187); */
+	border: none;
+}
+.select-field3,
+.task,
+.list3 {
+	width: 100%;
+	background-color: white;
+	padding: 0.3rem;
+}
+.list3 {
+	box-shadow: 0 30px 60px rgb(0, 0, 0, 0.2);
+	display: none;
+}
+.down-arrow3 {
+	font-size: 1.2rem;
+	display: inline-block;
+	cursor: pointer;
+	transition: 0.2s linear;
+	font-weight: bold;
+}
+.task {
+	display: block;
+	padding-left: 0;
+}
+.task span {
+	float: right;
+	font-size: 0.6rem;
+	padding-top: 6px;
+}
+.task:hover {
+	background-color: aliceblue;
+}
+.show {
+	display: block;
+}
+.rotate180 {
+	transform: rotate(-60deg);
+}
+/* ################################# */
+
+#section {
+	width: 174.3%;
+	height: 35px;
+	color: #000000;
+	font-weight: bold;
+	padding: 3px;
+	border: none;
+}
+
+#discount {
+	width: 300px;
+}
+
+#discount a {
+	text-decoration: none;
+	color: tomato;
+}
+
+#my {
+	width: 300px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 110px;
+}
+#my a {
+	text-decoration: none;
+	font-size: 15px;
+	color: black;
+}
+
+#more {
+	margin-top: 10px;
+	width: 200px;
+	height: 34px;
+	border: none;
+	font-weight: bold;
+	font-size: 15px;
+}
