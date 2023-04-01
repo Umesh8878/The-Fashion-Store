@@ -164,9 +164,8 @@ function getCard(id,img,name,price,cat){
             id:id,
             image:img,
             title:name,
-            price:price,
+            price:price, 
             category:cat,
-            quantity:1
           }
           console.log(obj)
           cart_item.push(obj)
