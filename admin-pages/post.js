@@ -38,4 +38,7 @@ form.addEventListener('submit', (e)=>{
         .then((res)=>res.json())
         .then((data)=>console.log(data))
         .catch((err)=>console.log(err))
+
+        form.reset()
+
 })
