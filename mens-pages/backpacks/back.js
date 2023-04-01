@@ -128,8 +128,10 @@ function getCard(id,img,name,price,cat){
             image:img,
             title:name,
             price:price,
-            category:cat
+            category:cat,
+           
           }
+         
     
           wish_list.push(obj)
           localStorage.setItem('wish-item', JSON.stringify(wish_list))
@@ -162,10 +164,10 @@ function getCard(id,img,name,price,cat){
             id:id,
             image:img,
             title:name,
-            price:price,
-            category:cat
+            price:price, 
+            category:cat,
           }
-    
+          console.log(obj)
           cart_item.push(obj)
           localStorage.setItem('cart-item', JSON.stringify(cart_item))
   

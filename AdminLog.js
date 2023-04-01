@@ -3,42 +3,52 @@ let number=document.querySelector(".number_list");
 let password=document.querySelector(".password_list");
 let username=document.querySelector("#username_list")
 let register=JSON.parse(localStorage.getItem("register"))||[];
-formdata.addEventListener("submit",(e)=>{
-   e.preventDefault();
 
-   register= register.filter((elem)=>{
-      return number.value==elem.mobile&&password.value==elem.password;
-   })
-   
-  if(register==""){
-    Swal.fire({
+
+formdata.addEventListener('submit', (e)=>{
+  e.preventDefault()
+  
+  fetch(`https://weary-bee-train.cyclic.app/register`)
+  .then((res)=>res.json())
+  .then((data)=>{
+    if(check(data)){
+      Swal.fire({
+          icon: 'success',
+          text: 'WELCOME ADMIN',
+        
+        })
+
+        window.location.href="/admin-pages/user.html"
+    }
+    else{
+      Swal.fire({
         icon: 'error',
         title: 'Oops...',
-        text: 'PLEASE ENTER CORRECT PASSWORD',
+        text: 'WRONG CREDENTIALS',
       
       })
-      formdata.reset();
-      console.log(register)
-  }else{
-    Swal.fire({
-        icon: 'success',
-        title: 'Congratulation',
-        text: 'LOGIN SUCCESSFUL',
-      
-      })
-      formdata.reset();
-  }
-  usernameappend(register)
-  
+    }
+   
+  })
+
+  // formdata.reset()
 })
 
-function usernameappend(data){
-    let x='';
-    data.forEach(element => {
-        
-        x+=` <a href="login.html"> <h2> ${element.firstname} ${element.lastname}</h2></a>`
-       
-    });
-    username.innerHTML=x;
-}
+function check(data){
 
+
+  for(let i=0; i<data.length; i++){
+
+    if(data[i].email==number.value && data[i].password==password.value){
+
+      return true
+    }
+    else{
+      false
+    }
+
+    
+
+  }
+
+}
