@@ -120,13 +120,13 @@ return button;
 
 async function deleteProduct(productId) {
   try {
-  const response = await fetch(`${baseServerURL}/${productId}`, {
+  const response = await fetch(`${baseServerURL}/?${productId}`, {
   method: 'DELETE',
   });
   const data = await response.json();
   console.log(data);
   // refetch data and re-render the table after deleting
-  fetchData();
+  fetchData(currentPage);
   } catch (error) {
   console.log(error);
   }
