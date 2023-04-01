@@ -11,6 +11,7 @@ formdata.addEventListener('submit', (e)=>{
   fetch(`https://weary-bee-train.cyclic.app/register`)
   .then((res)=>res.json())
   .then((data)=>{
+    console.log(data)
     if(check(data)){
       Swal.fire({
           icon: 'success',
@@ -18,7 +19,7 @@ formdata.addEventListener('submit', (e)=>{
         
         })
 
-        window.location.href="/admin-pages/user.html"
+        window.location.href="/admin-pages/mendata.html"
     }
     else{
       Swal.fire({

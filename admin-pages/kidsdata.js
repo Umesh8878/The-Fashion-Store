@@ -84,6 +84,7 @@ function renderTable() {
     delbtn.textContent = "DELETE";
     delbtn.addEventListener("click", () => {
         deleteProduct(pro.id)
+        tr.remove()
     });
     del.append(delbtn);
     editbtn.textContent = "EDIT";
