@@ -1,68 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kids Data</title>
-    <link rel="stylesheet" href="./kidsdata.css">
-</head>
-<body>
-    <div id="nav">
-        <!-- <div id="logo">
-            <a href=""><img src="./All images/logo.png" alt="" /></a>
-        </div> -->
-        <div>
-          <a href="/admin-pages/mendata.html">MEN</a>
-          <a href="/admin-pages/womendata.html">WOMEN</a>
-          <a href="/admin-pages/kidsdata.html">KIDS</a>
-        </div>
-        <div id="search-name">
-          <input type="text" id="search-Name" placeholder="Search by Name">
-        </div>
-        <div>
-          <select id="filter-user_category">
-            <option value="">Filter By User-Category</option>
-            <option value="Boys">Boys</option>
-            <option value="Girls">Girls</option>
-          </select>
-        </div>
-        <div>
-          <select id="sort-price">
-            <option value="">Sort by Price</option>
-            <option value="asc">Ascending</option>
-            <option value="desc">Descending</option>
-          </select>
-        </div>    
-    </div>
-    <h1>Kids Data</h1>
-    <table>
-      <thead>
-        <tr>
-          <th>Id</th>
-          <th>Image</th>
-          <th>Name</th>
-          <th>User_Section</th>
-          <th>Users_Category</th>
-          <th>User_Category_Section</th>
-          <th>price</th>
-          <th>Description</th>
-          <th>Delete</th>
-          <th>Edit</th>
-        </tr>
-      </thead>
-      <tbody id="products-data">
-      </tbody>
-    </table>
-    <div id="pagination-wrapper">
-    </div>
-</body>
-    <script src="./kidsdata.js"></script>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Kids Data</title>
+		<link rel="stylesheet" href="./kidsdata.css" />
+	</head>
+	<body>
+		<div id="nav">
+			<div id="logos">
+				<a href=""><img src="/All images/logo.png" alt="" /></a>
+			</div>
+			<div id="div2">
+				<a href="/admin-pages/mendata.html">MEN</a>
+				<a href="/admin-pages/womendata.html">WOMEN</a>
+				<a href="/admin-pages/kidsdata.html">KIDS</a>
+			</div>
+			<div id="search-name">
+				<input type="text" id="search-Name" placeholder="Search by Name" />
+			</div>
+			<div>
+				<select id="filter-user_category">
+					<option value="">Filter By User-Category</option>
+					<option value="Boys">Boys</option>
+					<option value="Girls">Girls</option>
+				</select>
+			</div>
+			<div>
+				<select id="sort-price">
+					<option value="">Sort by Price</option>
+					<option value="asc">Ascending</option>
+					<option value="desc">Descending</option>
+				</select>
+			</div>
+		</div>
+		<h1>Kids Data</h1>
+		<table>
+			<thead>
+				<tr>
+					<th>Id</th>
+					<th>Image</th>
+					<th>Name</th>
+					<th>User_Section</th>
+					<th>Users_Category</th>
+					<th>User_Category_Section</th>
+					<th>price</th>
+					<th>Description</th>
+					<th>Delete</th>
+					<th>Edit</th>
+				</tr>
+			</thead>
+			<tbody id="products-data"></tbody>
+		</table>
+		<div id="pagination-wrapper"></div>
+	</body>
+	<script src="./kidsdata.js"></script>
 </html>
-
-
-
-      
-
-
-
