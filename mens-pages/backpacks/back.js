@@ -128,8 +128,10 @@ function getCard(id,img,name,price,cat){
             image:img,
             title:name,
             price:price,
-            category:cat
+            category:cat,
+           
           }
+         
     
           wish_list.push(obj)
           localStorage.setItem('wish-item', JSON.stringify(wish_list))
@@ -162,10 +164,10 @@ function getCard(id,img,name,price,cat){
             id:id,
             image:img,
             title:name,
-            price:price,
-            category:cat
+            price:price, 
+            category:cat,
           }
-    
+          console.log(obj)
           cart_item.push(obj)
           localStorage.setItem('cart-item', JSON.stringify(cart_item))
   
@@ -204,3 +206,38 @@ function check2(id){
     }
     return false;
 }
+
+document.querySelector('.select-field').addEventListener('click', () => {
+	document.querySelector('.list').classList.toggle('show')
+	document.querySelector('.down-arrow').classList.toggle('rotate180')
+})
+
+document.querySelector('.select-field2').addEventListener('click', () => {
+	document.querySelector('.list2').classList.toggle('show')
+	document.querySelector('.down-arrow2').classList.toggle('rotate180')
+})
+
+document.querySelector('.select-field3').addEventListener('click', () => {
+	document.querySelector('.list3').classList.toggle('show')
+	document.querySelector('.down-arrow3').classList.toggle('rotate180')
+})
+
+
+
+let high = document.getElementById('high')
+
+let low = document.getElementById('low')
+
+let btn = document.querySelector('.f-btn')
+
+
+btn.addEventListener('click', ()=>{
+
+  if(high){
+		fetchUser(`https://weary-bee-train.cyclic.app/mens?user_category_section=backpacks&_sort=price&_order=asc`)
+	}
+	if(low){
+		fetchUser(`https://weary-bee-train.cyclic.app/mens?user_category_section=backpacks&_sort=price&_order=desc`)
+	}
+  
+})
