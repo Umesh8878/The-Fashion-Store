@@ -82,8 +82,10 @@ function renderTable() {
     tdCatSec.textContent = pro.user_category_section;
     tdDesc.textContent = pro.Description;
     delbtn.textContent = "DELETE";
+    let id = pro.id
     delbtn.addEventListener("click", () => {
-        deleteProduct(pro.id)
+      deleteProduct(pro.id)
+      tr.remove()
     });
     del.append(delbtn);
     editbtn.textContent = "EDIT";
@@ -121,6 +123,9 @@ async function deleteProduct(productId) {
   try {
   const response = await fetch(`${baseServerURL}/${productId}`, {
   method: 'DELETE',
+  headers:{
+    "Content-Type":"application/json"
+  }
   });
   const data = await response.json();
   console.log(data);

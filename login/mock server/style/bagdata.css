@@ -51,8 +51,10 @@
     width: 30%;
 }
 .bag-img-left>img{
-    height: 250px;
+    height: 300px;
     border-radius: 20px;
+    /* border: 1px solid red; */
+    /* background-color: aqua; */
 }
 .btn-data-list{
     height: 70px;

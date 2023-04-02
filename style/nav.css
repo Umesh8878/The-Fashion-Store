@@ -1,6 +1,7 @@
 body {
 	padding: 0;
 	margin: 0;
+	position: relative;
 }
 
 /* ########## nav_box_1 ############# */
@@ -118,6 +119,9 @@ body {
 	align-items: center;
 	justify-content: space-between;
 }
+#acc:hover div {
+	border-bottom: #e12d2d;
+}
 
 #acc img {
 	width: 25px;
@@ -174,21 +178,26 @@ input:hover {
 	color: black;
 }
 
-/* ########################## main ################### */
-body {
-	font-family: Poppins;
+.S1:hover {
+	border-bottom: 2px solid tomato;
 }
+/* ########################## main ################### */
+
 .wrapper {
 	width: 75%;
 	margin: auto;
 	/* border: 1px solid black; */
+	font-family: 'Big Shoulders Stencil Text', cursive;
+	font-family: 'Comfortaa', cursive;
+	font-family: 'IBM Plex Serif', serif;
+	font-family: 'Source Sans Pro', sans-serif;
 }
 
 .menu-area ul {
 	/* background: #ffffff; */
 	list-style: none;
 	position: relative;
-	text-transform: uppercase;
+	/* text-transform: uppercase; */
 }
 .menu-area ul li {
 	display: inline-block;
@@ -197,12 +206,12 @@ body {
 	color: #e12d2d;
 }
 .menu-area ul li a {
-	color: #000000;
+	color: #151515;
 	text-decoration: none;
 	display: block;
-	padding: 12px 35px;
+	padding: 10px 30px;
 	font-weight: bold;
-	font-size: 14px;
+	font-size: 13px;
 }
 .menu-area ul li:hover {
 	background: hsl(0, 0%, 100%);
@@ -230,7 +239,7 @@ body {
 }
 .menu-area ul ul ul {
 	position: absolute;
-	left: 100%;
+	/* left: 100%; */
 	top: 0;
 }
 /* ############# work on responsive ################## */
@@ -254,6 +263,14 @@ body {
 	font-size: 10px;
 }
 
+#nav_box_3 {
+	display: none;
+}
+
+#hamburger-menu {
+	display: none;
+}
+/* ################################################### */
 /* #For Tab view */
 
 @media only screen and (max-width: 1000px) {
@@ -286,10 +303,29 @@ body {
 		width: 110px;
 		height: 85px;
 	}
+	#nav_box_3 {
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		width: 100%;
+		height: 40px;
+		box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+	}
+	#nav_box_3 a {
+		text-decoration: none;
+		color: black;
+		font-weight: bold;
+	}
 
-	/* .group {
-		display: none;
-	} */
+	#logo {
+		margin-left: 150px;
+	}
+	#hamburger-menu {
+		display: inline-block;
+		margin-left: 1px;
+		font-size: 25px;
+		color: #171717;
+	}
 }
 
 /* #For Mobile view */
@@ -324,7 +360,28 @@ body {
 		height: 85px;
 	}
 
-	.group {
-		display: none;
+	#nav_box_3 {
+		display: flex;
+		justify-content: space-around;
+		width: 100%;
+		align-items: center;
+		height: 40px;
+		box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+	}
+	#nav_box_3 a {
+		display: block;
+		text-decoration: none;
+		color: black;
+		font-weight: bold;
+	}
+
+	#logo {
+		margin-left: 40px;
+	}
+	#hamburger-menu {
+		margin-left: 20px;
+		display: inline-block;
+		font-size: 25px;
+		color: #171717;
 	}
 }
