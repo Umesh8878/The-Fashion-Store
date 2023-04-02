@@ -197,7 +197,7 @@ input:hover {
 	/* background: #ffffff; */
 	list-style: none;
 	position: relative;
-	text-transform: uppercase;
+	/* text-transform: uppercase; */
 }
 .menu-area ul li {
 	display: inline-block;
@@ -209,7 +209,7 @@ input:hover {
 	color: #151515;
 	text-decoration: none;
 	display: block;
-	padding: 12px 35px;
+	padding: 10px 30px;
 	font-weight: bold;
 	font-size: 13px;
 }
@@ -239,7 +239,7 @@ input:hover {
 }
 .menu-area ul ul ul {
 	position: absolute;
-	left: 100%;
+	/* left: 100%; */
 	top: 0;
 }
 /* ############# work on responsive ################## */
@@ -268,7 +268,7 @@ input:hover {
 }
 
 #hamburger-menu {
-	/* display: none; */
+	display: none;
 }
 /* ################################################### */
 /* #For Tab view */
@@ -318,15 +318,13 @@ input:hover {
 	}
 
 	#logo {
-		margin-left: 145px;
+		margin-left: 150px;
 	}
 	#hamburger-menu {
+		display: inline-block;
 		margin-left: 1px;
-	}
-	#hamburger-menu button {
 		font-size: 25px;
-		border: none;
-		background-color: white;
+		color: #171717;
 	}
 }
 
@@ -378,18 +376,12 @@ input:hover {
 	}
 
 	#logo {
-		margin-left: 45px;
+		margin-left: 40px;
 	}
 	#hamburger-menu {
-		margin-left: 3px;
-	}
-	#hamburger-menu button {
+		margin-left: 20px;
+		display: inline-block;
 		font-size: 25px;
-		border: none;
-		background-color: white;
+		color: #171717;
 	}
-}
-
-#hamburger-menu {
-	display: none;
 }
