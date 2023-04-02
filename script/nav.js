@@ -6,17 +6,24 @@ const expand = () => {
 	input.classList.toggle('square')
 }
 
-searchBtn.addEventListener(
-	'click',
-	expand
-)(function () {
-	$('.hamburger-menu').on('click', function () {
-		$('.bar').toggleClass('animate')
-		$('.mobile-menu').toggleClass('active')
-		return false
-	})
-	$('.has-children').on('click', function () {
-		$(this).children('ul').slideToggle('slow', 'swing')
-		$('.icon-arrow').toggleClass('open')
-	})
-})()
+// ############################
+
+let container = document.getElementById('hamburger')
+
+let isClicked = true
+
+let show = function () {
+	if (isClicked) {
+		container.style.display = 'block'
+		isClicked = false
+	} else {
+		container.style.display = 'none'
+		isClicked = true
+	}
+}
+
+let SHOPTYPE = document.getElementById('SHOPTYPE')
+
+let change = function () {
+	SHOPTYPE.style.color = 'white'
+}
