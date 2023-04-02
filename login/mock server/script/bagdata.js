@@ -2,17 +2,17 @@ let bagdata=JSON.parse(localStorage.getItem("cart-item"))||[];
 let bagcontainer=document.querySelector("#bag-container");
 let bag_img_left=document.querySelector(".bag-img-left");
 let bag_data_center=document.querySelector(".bag-data-center");
-let left_bag_list=document.querySelector("#left-bag-list")
+let left_bag_list=document.querySelector("#left-bag-list");
+let allbilling=document.querySelector("#allbilling");
 
 
 
 // console.log(qty_list.value);
 appendbag(bagdata);
 function appendbag(data){
-    let total=0;
+   let total=0;
     data.forEach((el,index) => {
-       total+=el.price;
-      //  billdetails(total);
+      
       let div1=document.createElement("div");
       div1.setAttribute("class",'cart_data_container')
       let div2=document.createElement("div");
@@ -73,7 +73,9 @@ function appendbag(data){
       opt14.innerText="Qty: 7"
       opt14.setAttribute("value","7");
       select2.addEventListener("change",()=>{
-       
+        data[index].quantity=(+select2.value)
+        //  console.log(data[index]);
+         localStorage.setItem("cart-item",JSON.stringify(data))
         priceup()
         
       })
@@ -88,13 +90,19 @@ function appendbag(data){
       h3.setAttribute("id","actual_price");
      
       function priceup(){
-         let sub=(+h3.innerText)
-         
-        // console.log(result,total,+h3.innerHTML+"%")
-        h3.innerText=` ${el.price*select2.value}`;
-        let  result=(+total)+(+h3.innerHTML);
-        // result=result-sub;
-        localStorage.setItem("actual_price",JSON.stringify(result))
+        
+        h3.innerText=` ${el.price*el.quantity}`;
+        let biling=0;
+        
+        data[index].totalprice=(+el.price*(+el.quantity))
+
+        for(let i=0; i<data.length; i++){
+          biling+=(+data[i].totalprice)
+          // console.log(biling);
+        }
+        billingdata(biling)
+        // console.log(data[index]);
+        localStorage.setItem("cart-item",JSON.stringify(data))
       
       }
   
@@ -123,77 +131,34 @@ function appendbag(data){
        
     });
      
-   
-   
-
     
 }
-let result1=JSON.parse(localStorage.getItem("actual_price"))
-billdetails(result1);
 
-let cart_total=document.querySelector(".cart-total");
-let GST=document.querySelector(".GST");
-let total_amount=document.querySelector(".total-amount");
-let Member_discount=document.querySelector(".Member-discount");
-let allbilling=document.querySelector("#allbilling");
-function billdetails(billdata){
-  let x='';
-  billdata.forEach((el)=>{
-     x+=`
+
+function billingdata(ammount){
   
-    <div class="cart-total">
-        <h4>Cart Total</h4>
-         <h4>${el}</h4>
-    </div>
-    <div class="Member-discount">
-        <h4>Member Discount</h4>
-         <h4>${50.00}</h4>
-    </div>
-    <div class="GST">
-        <h4>GST</h4>
-         <h4>${el*0.18}</h4>
-    </div>
-    <div class="shiping">
-        <h4>Shipping Charges</h4>
-        <h4>00.00</h4>
-    </div>
-    <div class="total-amount">
-        <h2>Total Amount</h2>
-        <h2>${el+(el*0.18)-50.00}</h2>
-    </div>
-    `
-  })
+  let x=`
+                <div class="cart-total">
+                    <h4>Cart Total</h4>
+                    <h4>₹ ${ammount}</h4>
+                </div>
+                <div class="Member-discount">
+                    <h4>Member Discount</h4>
+                    <h4>₹ 50.00</h4>
+                </div>
+                <div class="GST">
+                    <h4>GST</h4>
+                    <h4>₹ ${(ammount*0.18).toFixed(2)}</h4>
+                </div>
+                <div class="shiping">
+                    <h4>Shipping Charges</h4>
+                    <h4>₹ 00.00</h4>
+                </div>
+                <div class="total-amount">
+                    <h2>Total Amount</h2>
+                    <h2>₹ ${(ammount+(ammount*0.18)-50).toFixed(2)}</h2>
+                </div>
+  `
 
   allbilling.innerHTML=x;
-  // let total_bill=document.createElement("h4");
-  // total_bill.innerText=billdata
-  // let tax=document.createElement("h4");
-  // tax.innerText=billdata*0.18;
-  
-  // let discount=document.createElement("h4");
-  // discount.innerText=50;
- 
-  // let pay_amount=document.createElement("h2");
-  // pay_amount.innerText=billdata+tax.value-discount
-  // total_amount.append(pay_amount);
-  // cart_total.append(total_bill);
-  // GST.append(tax);
-  // Member_discount.append(discount)
 }
-
-
-// let actual_price=document.querySelector("#actual_price");
-// let qty_list=document.querySelector("#qty_list");
-// let bag_data_right=document.querySelector(".bag-data-right")
-
-// qty_list.addEventListener("change",()=>{
-//  let obj={
-//   qty:qty_list.value,
-//  }
-//  bagdata.push(obj);
- 
-// })
-
-
-// {/* <h3 id="actual_price"> ${el.price}</h3> */}
-

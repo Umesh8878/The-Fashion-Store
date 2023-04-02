@@ -1,5 +1,5 @@
 #bag-container{
-    border: 1px solid red;
+    /* border: 1px solid red; */
     margin-top: 50px;
     display: flex;
     justify-content: space-between;
@@ -124,4 +124,12 @@
     margin-top: 30px;
     margin-bottom: 30px;
     
+}
+.cart-total,.Member-discount,.GST,.shiping,.total-amount{
+    display: flex;
+    justify-content: space-between;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgb(209, 213, 219) 0px 0px 0px 1px inset;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 20px;
 }
