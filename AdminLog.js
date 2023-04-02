@@ -19,7 +19,7 @@ formdata.addEventListener('submit', (e)=>{
         
         })
 
-        window.location.href="/admin-pages/mendata.html"
+        window.location.href="./admin-pages/post.html"
     }
     else{
       Swal.fire({
