@@ -1,97 +1,136 @@
-body{
-    margin: 0%;
-    padding: 0%;
+body {
+	margin: 0%;
+	padding: 0%;
 }
-#nav{
-    width: 97%;
-    padding: 15px 20px;
-    box-shadow: rgba(238, 230, 245) 0px 3px 8px;
-    display: flex;
-    justify-content: space-around;
-    background-color: red;
+#nav {
+	width: 97%;
+	padding: 15px 20px;
+	box-shadow: rgb(130, 130, 130) 0px 3px 8px;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	background-color: rgb(255, 255, 255);
+	height: 55px;
 }
-a {
-    display: inline-block;
-    padding: 10px;
-    border: 1px solid red;
-    text-decoration: none;
-    color: white;
-    background-color: red;
-    transition: all 0.3s ease; /* Adds a smooth transition effect */
-  }
-  
-  a:hover {
-    background-color: white;
-    color: red;
-  }
-#search-name{
-    width: 50%;
+#logos {
+	margin-right: 20px;
+	background-color: white;
 }
-#search-name > input{
-    width: 100%;
-    border: 1px solid rgb(78, 7, 7);
-    border-radius: 20px;
-    padding: 10px;    
+
+#logos img {
+	width: 110px;
+	height: 80px;
+	background-color: rgb(255, 255, 255);
 }
-#nav > div:nth-child(2){
-    width: 15%;
+
+#div2 {
+	margin-right: 20px;
 }
-#nav > div > #filter-user_category{
-    width: 100%;
-    padding: 10px;
+
+#div2 a {
+	display: inline-block;
+	padding: 10px;
+	/* border: 1px solid red; */
+	text-decoration: none;
+	color: rgb(0, 0, 0);
+	/* background-color: rgb(59, 11, 11); */
+	transition: all 0.3s ease;
+	font-size: 16px;
+	font-weight: bold;
 }
-#nav > div:last-child{
-    width: 15%;
+
+div2 a:hover {
+	background-color: rgb(193, 0, 0);
+	color: rgb(252, 252, 252);
 }
-#nav > div > #sort-price{
-    width: 100%;
-    padding: 10px;
+#search-name {
+	width: 50%;
 }
-#products-data > div{
-    width: 10%;
+#search-name > input {
+	width: 100%;
+	border: 1px solid rgb(78, 7, 7);
+	border-radius: 20px;
+	padding: 10px;
 }
-#products-data > div > img{
-    width: 100%;
+#nav > div:nth-child(2) {
+	width: 15%;
 }
-h1{
-    text-align: center;
-    color: red;
+#nav > div > #filter-user_category {
+	width: 100%;
+	padding: 10px;
 }
-table{
-    width: 100%;
-    margin: auto;
-    border: 3px solid red;
-    padding: 20px;
+#nav > div:last-child {
+	width: 15%;
 }
-thead{
-    background-color: rgb(245, 129, 129);
+#nav > div > #sort-price {
+	width: 100%;
+	padding: 10px;
 }
-thead > tr > td{
-    margin: 10px;
+#products-data > div {
+	width: 10%;
 }
-thead > td{
-    margin: 10px;
+#products-data > div > img {
+	width: 100%;
 }
-table > tbody > tr{
-    border: 1px solid black;
-    background-color: rgb(240, 206, 206);
-    text-align: center;
+h1 {
+	text-align: center;
+	color: red;
 }
-#pagination-wrapper{
-    text-align: center;
-    margin-top: 5%;
-    margin-bottom: 5%;
+table {
+	width: 100%;
+	margin: auto;
+	border: 3px solid red;
+	padding: 20px;
 }
-#pagination-wrapper > button{
-    padding: 10px 12px;
-    margin: 0 10px;    
+thead {
+	background-color: rgb(246, 159, 159);
+	color: rgb(0, 0, 0);
+}
+
+thead > tr {
+	height: 10px;
+}
+
+thead > tr > td {
+	margin: 10px;
+}
+thead > td {
+	margin: 10px;
+}
+table > tbody > tr {
+	border: 1px solid black;
+	background-color: rgb(240, 206, 206);
+	text-align: center;
+}
+#pagination-wrapper {
+	text-align: center;
+	margin-top: 5%;
+	margin-bottom: 5%;
+}
+#pagination-wrapper > button {
+	padding: 10px 12px;
+	margin: 0 10px;
 }
 /* #pagination-wrapper > button{
     background-color: rgb(206, 169, 241);
 } */
-#pagination-wrapper > button:last-child{
-    padding: 10px 10px;
+#pagination-wrapper > button:last-child {
+	padding: 10px 10px;
 }
-#image{
-    width: 30px;
+#image {
+	width: 30px;
+}
+
+#sort-price {
+	font-weight: bold;
+	border-top-right-radius: 35px;
+	border-bottom-right-radius: 35px;
+}
+#filter-user_category {
+	margin-top: 0.5px;
+	font-weight: bold;
+	/* height: 30px; */
+}
+#search-Name {
+	font-weight: bold;
 }
