@@ -11,11 +11,20 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
     integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/style/nav.css" />
+		<link rel="stylesheet" href="/style/navhumburger.css" />
 </head>
 <body>
 
   <header>
     <div id="nav_box_1">
+      <div id="hide">
+        <p id="para">
+          Download Our App & Get 10% Additional Cashback On All Orders
+        </p>
+        <button id="btn">OPEN APP</button>
+      </div>
+
       <div id="D1">
         <div class="SHOP-TYPE">
           <a href="/women.html">WOMEN</a>
@@ -29,10 +38,10 @@
       </div>
       <div id="D2">
         <a href="#">TRACK ORDER</a>
-        <a href="./../../contactUs.html">CONTACT US</a>
+        <a href="#">CONTACT US</a>
 
         <span id="store">
-          <a href="https://play.google.com/store/apps/details?id=com.thesouledstore"
+          <a href="#"
             ><img
               src="https://cdn-icons-png.flaticon.com/128/8473/8473048.pn"
               alt=""
@@ -43,21 +52,57 @@
     </div>
 
     <div id="nav_box_2">
+      <div>
+        <div id="hamburger-menu">
+          <button onclick="show()">&#9776;</button>
+        </div>
+      </div>
       <div id="logo">
-        <a href=""><img src="/All images/logo.png" alt="" /></a>
+        <a href="/kids.html"><img src="/All images/logo.png" alt="" /></a>
       </div>
 
       <div class="wrapper">
         <div class="menu-area">
           <ul>
             <li>
-              <a href="/kids-pages/boys/boys.html">BOYS &#x22B3; </a>
+              <a href="/kids-pages/boys/boys.html">BOYS</a>
+              <!-- <ul>
+                <li>
+                  <a href="">T-Shirts</a>
+                </li>
+                <li><a href="">Shirts</a></li>
+                <li><a href="">Polos</a></li>
+                <li><a href="">Hoodies</a></li>
+                <li><a href="">Jackets</a></li>
+                <li><a href="">Sweatshirts</a></li>
+                <li><a href="">Sweaters</a></li>
+                <li><a href="">Drop-Cut-Shirts</a></li>
+                <li><a href="">Co-ord Sets</a></li>
+              </ul> -->
             </li>
             <li>
-              <a href="/kids-pages/girls/girls.html">GIRLS &#x22B3;</a>
+              <a href="/kids-pages/girls/girls.html">GIRLS</a>
+              <!-- <ul>
+                <li><a href="">jeans</a></li>
+                <li><a href="">Cotton Pants</a></li>
+                <li><a href="">Cargos</a></li>
+                <li><a href="">Joggers</a></li>
+                <li><a href="">Shorts</a></li>
+                <li><a href="">Innerwear & Boxers</a></li>
+                <li><a href="">Pajamas</a></li>
+              </ul> -->
             </li>
             <li>
-              <a href="#">COLLECTIONS &#x22B3;</a>
+              <a href="#">WINTERWEAR COLLECTION</a>
+              <!-- <ul>
+                <li><a href="">Shoes</a></li>
+                <li><a href="">Perfumes</a></li>
+                <li><a href="">Pendants</a></li>
+                <li><a href="">Socks</a></li>
+              </ul> -->
+            </li>
+            <li>
+              <a href="#">SHOP BY THEMES &#x22B3; </a>
               <ul>
                 <li><a href="#">PRODUCT-1</a></li>
                 <li><a href="#">PRODUCT-1PRODUCT-1</a></li>
@@ -79,7 +124,7 @@
       </div>
 
       <div id="acc">
-        <div>
+        <div id="search_input">
           <div class="group">
             <svg class="icon" aria-hidden="true" viewBox="0 0 24 24">
               <g>
@@ -91,22 +136,22 @@
             <input placeholder="Search" type="search" class="input" />
           </div>
         </div>
-        <div>
-          <a href=""
+        <div id="login_user" class="s1">
+          <a href="/login/mock server/login.html"
             ><img
               src="https://cdn-icons-png.flaticon.com/128/1077/1077063.png"
               alt=""
           /></a>
         </div>
-        <div>
-          <a href=""
+        <div class="s1">
+          <a href="/wishlist.html"
             ><img
               src="https://cdn-icons-png.flaticon.com/128/1077/1077035.png"
               alt=""
           /></a>
         </div>
-        <div>
-          <a href="">
+        <div class="s1">
+          <a href="/login/mock server/bagdata.html">
             <img
               src="https://cdn-icons-png.flaticon.com/128/3977/3977561.png"
               alt=""
@@ -115,8 +160,198 @@
         </div>
       </div>
     </div>
+
+    <div id="nav_box_3">
+      <div><a href="/men.html">MEN</a></div>
+      <div><a href="/women.html">WOMEN</a></div>
+      <div><a href="/kids.html">KIDS</a></div>
+    </div>
+
+    <div id="container">
+      <div id="hamburger">
+        <div class="filter">
+          <div class="multi-selector">
+            <div class="select-field">
+              <input
+                type="text"
+                name=""
+                placeholder="PRODUCT"
+                id=""
+                class="input-selector"
+              />
+              <span class="down-arrow"> </span>
+            </div>
+            <div class="list">
+              <label for="task1" class="task">
+                <input type="checkbox" name="" id="task1" />
+                Oversize T-Shirts
+              </label>
+              <label for="task2" class="task">
+                <input type="checkbox" name="" id="task2" />
+                Men Co-ord Sets
+              </label>
+              <label for="task3" class="task">
+                <input type="checkbox" name="" id="task3" />
+                Supima Full Sleeve T-Shirts
+              </label>
+              <label for="task4" class="task">
+                <input type="checkbox" name="" id="task4" />
+                Men Compression T-Shirts
+              </label>
+
+              <label for="task4" class="task">
+                <input type="checkbox" name="" id="task4" />
+                Performance Jerseys
+              </label>
+              <label for="task4" class="task">
+                <input type="checkbox" name="" id="task4" />
+                Henley T-Shirts
+              </label>
+              <label for="task4" class="task">
+                <input type="checkbox" name="" id="task4" />
+                Easy Fit Full Sleeve T-Shirts
+              </label>
+
+              <label for="task4" class="task">
+                <input type="checkbox" name="" id="task4" />
+                Mandarin Polos
+              </label>
+            </div>
+          </div>
+
+          <div class="multi-selector">
+            <div class="select-field2">
+              <input
+                type="text"
+                name=""
+                placeholder="THEME"
+                id=""
+                class="input-selector"
+              />
+              <span class="down-arrow2"></span>
+            </div>
+            <div class="list2">
+              <label for="task1" class="task">
+                <input type="checkbox" name="" id="task1" />
+                Donald Duck
+              </label>
+              <label for="task2" class="task">
+                <input type="checkbox" name="" id="task2" />
+                The Office
+              </label>
+              <label for="task3" class="task">
+                <input type="checkbox" name="" id="task3" />
+                Brooklyn Nine-Nine
+              </label>
+              <label for="task4" class="task">
+                <input type="checkbox" name="" id="task4" />
+                Mickey Mouse
+              </label>
+
+              <label for="task4" class="task">
+                <input type="checkbox" name="" id="task4" />
+                The Lord Of The Rings
+              </label>
+              <label for="task4" class="task">
+                <input type="checkbox" name="" id="task4" />
+                Star Wars
+              </label>
+              <label for="task4" class="task">
+                <input type="checkbox" name="" id="task4" />
+                Deadpool
+              </label>
+
+              <label for="task4" class="task">
+                <input type="checkbox" name="" id="task4" />
+                Archie Comiccs
+              </label>
+            </div>
+          </div>
+
+          <div class="multi-selector">
+            <div class="select-field3">
+              <input
+                type="text"
+                name=""
+                placeholder="Shoed & Accessories"
+                id=""
+                class="input-selector"
+              />
+              <span class="down-arrow3"> </span>
+            </div>
+            <div class="list3">
+              <label for="task1" class="task">
+                <input type="checkbox" name="" id="task1" />
+                Shoes
+              </label>
+              <label for="task2" class="task">
+                <input type="checkbox" name="" id="task2" />
+                Perfumes
+              </label>
+              <label for="task3" class="task">
+                <input type="checkbox" name="" id="task3" />
+                Pendants
+              </label>
+              <label for="task4" class="task">
+                <input type="checkbox" name="" id="task4" />
+                Socks
+              </label>
+              <label for="task4" class="task">
+                <input type="checkbox" name="" id="task4" />
+                Backpacks
+              </label>
+              <label for="task4" class="task">
+                <input type="checkbox" name="" id="task4" />
+                Rings
+              </label>
+              <label for="task4" class="task">
+                <input type="checkbox" name="" id="task4" />
+                Key Chains
+              </label>
+
+              <label for="task4" class="task">
+                <input type="checkbox" name="" id="task4" />
+                XXXL
+              </label>
+            </div>
+          </div>
+
+          <div>
+            <select name="" id="section">
+              <option value="">Shop By Themes</option>
+              <option value="">TSS Originals</option>
+              <option value="">Solids</option>
+              <option value="">Superheros</option>
+              <option value="">Movies % TV Shows</option>
+              <option value="">Cartoons And Comics</option>
+              <option value="">Sports</option>
+              <option value="">Popular Genres</option>
+            </select>
+          </div>
+
+          <div id="discount">
+            <p><a href="#">Get Extra Discount With Membership</a></p>
+          </div>
+
+          <div id="my">
+            <a href="#">My Account</a>
+            <a href="#">My Order</a>
+            <a href="#">Contact Us</a>
+            <a href="#">FAQs</a>
+          </div>
+
+          <select name="" id="more">
+            <option value="">More</option>
+            <option value=""><a href="">Careers</a></option>
+            <option value=""><a href="">Form The Soul</a></option>
+            <option value=""><a href="">About Us</a></option>
+            <option value=""><a href="">T&C</a></option>
+            <option value=""><a href="">Privacy Policy</a></option>
+          </select>
+        </div>
+      </div>
+    </div>
   </header>
-    
 
     <div class="one">
         <img src="https://prod-img.thesouledstore.com/public/theSoul/uploads/themes/644420230328162645.jpg?format=webp&w=1366&dpr=1.0" alt="error" style="width: 100vw;">
@@ -371,4 +606,5 @@
     
 </body>
 <script src="./girls.js"></script>
+<script src="./script/nav.js"></script>
 </html>
