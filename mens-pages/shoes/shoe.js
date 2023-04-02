@@ -163,7 +163,8 @@ function getCard(id,img,name,price,cat){
             image:img,
             title:name,
             price:price,
-            category:cat
+            category:cat,
+            quantity:1
           }
     
           cart_item.push(obj)
@@ -204,3 +205,22 @@ function check2(id){
     }
     return false;
 }
+
+let filter = document.querySelector('.section')
+
+let high = document.getElementById('high')
+
+let low = document.getElementById('low')
+
+let btn = document.querySelector('.f-btn')
+
+btn.addEventListener('click', ()=>{
+
+	
+	if(high){
+		fetchUser(`https://weary-bee-train.cyclic.app/mens?user_category_section=shoes&_sort=price&_order=asc`)
+	}
+	if(low){
+		fetchUser(`https://weary-bee-train.cyclic.app/mens?user_category_section=shoes&_sort=price&_order=desc`)
+	}
+})

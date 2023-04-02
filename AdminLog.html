@@ -1,35 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Login</title>
-    <link rel="stylesheet" href="./AdminLog.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Login</title>
+    <link rel="stylesheet" href="./login/mock server/style/register.css">
+    <link rel="stylesheet" href="./../../style/footer.css">
+    <!-- <link rel="stylesheet" href="./style/footer.css"> -->
+    <link rel="stylesheet" href="./../../style/nav.css">
     <link rel="icon" type="image/x-icon" href="./image/Logo.jpeg">
-    <style>
-        
-    </style>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+   
 </head>
 <body>
-    <div id="container">
+
+  <header>
+    <div id="nav_box_1">
+      <div id="D1">
+        <div class="SHOP-TYPE">
+          <a href="women.html">WOMEN</a>
+        </div>
+        <div class="SHOP-TYPE">
+          <a href="men.html">MEN</a>
+        </div>
+        <div class="SHOP-TYPE">
+          <a href="kids.html">KIDS</a>
+        </div>
+      </div>
+      <div id="D2">
+        <a href="track_order.html">TRACK ORDER</a>
+        <a href="./contactUs.html">CONTACT US</a>
+
+
+
+    <div id="registerbox">
+        <div id="registerh4"><h4> <b style="color: red; font-size: 30px;">Admin Login</b></h4></div>
+        <div class="loginregisterbtn">
+            <button class="login" style="background-color:#0b7058; border: 0px;"><a href="./AdminLog.html" style="color: white;">LOGIN</a></button>
+            <button class="register" style="background-color:#efefef;  border: 1px solid black;"><a href="./AdminRegister.html" style="color: rgb(12, 12, 12);">REGISTER</a></button>
+        </div>
         
-        <div class="nav">
-            <h1>The Fashion Store</h1>
-            <a href="./men.html">Men</a>
-            <a href="./women.html">Women</a>
-            <a href="./kids.html">Kids</a>
-            <a href="./cart.html">Cart</a>
-            <a href="./wishlist.html">Wishlist</a>
+        <form action="">
+          <div id="registerinput">
+            <h3>-OR-</h3>
+           
+           <form action="">
+            <input type="email" placeholder="Enter Email-Id" class="number_list">
+            <input type="password" placeholder="Enter Password" class="password_list">
+            <input type="submit" value="PROCEED" id="process">
+           </form>
+            <span class="registerspan">New User? <a href="./AdminLog.html" id="regilogin">Create Account</a> </span>
           </div>
-        <form id="login">
-            <input type="email"  placeholder="Email" id="email" required>
-            
-            <input type="password"  placeholder="Password" id="password" required>
-            
-            <input type="submit" id ="submit" >
         </form>
     </div>
-    
+    <div>
+      <div id="footer">
+        <div class="1">
+          <ul>
+            <li><a href="#">NEED HELP</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Track Order</a></li>
+            <li><a href="#">Returns & Refunds</a></li>
+            <li><a href="#">FAQs</a></li>
+            <li><a href="#">My Account</a></li>
+          </ul>
+        </div>
+        <div class="2">
+          <ul>
+            <li><a href="#">COMPANY</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Career</a></li>
+            <li><a href="#">Store Near Me</a></li>
+            <li><a href="#">From The Soul</a></li>
+            <li><a href="#">Souled Army</a></li>
+          </ul>
+        </div>
+        <div class="three">
+          <ul>
+            <li><a href="#">MORE INFO</a></li>
+            <li><a href="#">T&C</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Site Map</a></li>
+            <li>.</li>
+            <li>.</li>
+          </ul>
+        </div>
+        <div class="four">
+          <ul>
+            <li><a href="#">COD Available</a></li>
+            <li><a href="#">30 Days Return Policy</a></li>
+            <li>.</li>
+            <li>.</li>
+            <li>.</li>
+            <li>.</li>
+          </ul>
+        </div>
+      </div>
+      <div id="footer-img">
+        <img src="./../../image/footer img.png" alt="">
+      </div>
+      <div id="copyright">
+        <h4>© The Souled Store 2023-24</h4>
+      </div>
+    </div>
+    <script src="/AdminLog.js"></script>
 </body>
 </html>
-<script src="AdminLog.js">
-
-</script>

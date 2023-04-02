@@ -8,6 +8,7 @@ body {
     background-color: #e0e0e0;
     padding: 10px;
     flex-wrap: wrap;
+    margin-top: 30px;
   }
 
   #footer > div {

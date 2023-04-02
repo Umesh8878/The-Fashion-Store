@@ -1,0 +1,54 @@
+#container{
+    width: 60%;
+    margin-left: 20px;
+    float: left;
+    display: grid;
+    margin-top: 20px;
+    grid-template-columns: repeat(3,1fr);
+    gap: 10px;
+    border: 1px solid black;
+}
+/* #container > h1{
+    text-align: center;
+} */
+h1{
+    text-align: center;
+    border: none;
+}
+#container > div{
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    padding: 10px;
+    line-height: 50%;
+}
+#container > div > img{
+    width: 100%;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+}
+#container > div > button{
+    margin-right: 5px;
+    margin-left: 5px;
+    background-color: rgb(200, 197, 197);
+    border: none;
+
+}
+/* #container > div > button:hover{
+    background-color: black;
+    color: white;
+} */
+button{
+    margin: auto;
+    margin-top: 20px;
+    justify-content: center;
+    background-color: rgb(0, 98, 255);
+    border: none;
+    margin-left: 78.5%;
+    padding: 10px;
+}
+button > a{
+    justify-content: center;
+    /* margin-top: 20px; */
+    text-decoration: none;
+    background-color: rgb(0, 98, 255);
+    color: white;
+}

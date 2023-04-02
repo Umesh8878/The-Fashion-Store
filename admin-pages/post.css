@@ -1,0 +1,99 @@
+ /* CSS for desktop screens */
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+
+    body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f2f2f2;
+    }
+
+    h1 {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    color: red;
+    }
+
+    /* Form styling */
+    form {
+    max-width: 60%;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 0px 20px rgba(250, 2, 2, 0.1);
+    padding: 40px;
+    }
+
+    label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #444;
+    }
+
+    input[type="text"],
+    input[type="datetime"],
+    input[type="number"],
+    input[type="link"],
+    select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    color: #555;
+    }
+
+    select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="8" height="5"><polygon points="4,0 8,5 0,5"/></svg>');
+    background-repeat: no-repeat;
+    background-size: 8px 5px;
+    background-position: right 10px center;
+    }
+
+    input[type="submit"] {
+    margin: auto;
+    background-color: red;
+    color: #fff;
+    border: none;
+    padding: 15px 20px;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    }
+
+    input[type="submit"]:hover {
+    background-color: rgb(228, 57, 57);
+    }
+
+    /* Responsive styling */
+    @media only screen and (max-width: 600px) {
+    form {
+        padding: 20px;
+    }
+
+    label {
+        font-size: 14px;
+    }
+
+    input[type="text"],
+    input[type="datetime"],
+    input[type="number"],
+    input[type="link"],
+    select {
+        font-size: 14px;
+    }
+
+    input[type="submit"] {
+        font-size: 14px;
+        padding: 10px 15px;
+    }
+    }

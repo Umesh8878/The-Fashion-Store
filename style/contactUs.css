@@ -1,0 +1,228 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: Verdana, sans-serif, sans-serif;
+}
+
+#firstdiv{
+   margin-top: 3%;
+}
+#firstdiv >h2{
+ text-align: center;
+}
+#seconddiv{
+  /* border: solid red; */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 2%;
+  height: 20vh;
+  padding: 0%;
+  gap: 2%;
+  text-align: center;
+  width: 100%;
+  
+}
+#seconddiv>div{
+  display: inline-block;
+  justify-content: center;
+  /* border: solid yellow; */
+  height: 100%;
+  width: 200%;
+  text-align: center;
+  border: none;
+  
+}
+/* #seconddiv>div{
+  width: 100%;
+} */
+#seconddiv>div>a>button{
+  /* border: solid greenyellow; */
+  display: inline-block;
+  height: 100%;
+  width: 80%;
+  text-align: center;
+  border: none;
+ 
+}
+#thirddiv{
+  background-color: rgb(17,122,122);
+  margin-top: 3.5%;
+  /* border: solid pink; */
+  height: 20vh;
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+  vertical-align: middle;
+
+}
+#thirddiv>h2{
+  /* background-color: rgb(17,122,122);
+  margin-top: 3.5%; */
+  /* border: solid pink; */
+  /* height: 20vh; */
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  vertical-align: middle;
+  line-height: 100px;
+}
+#forthdiv{
+  display: inline-block;
+  /* border: solid pink; */
+  
+  width: 100%;
+  height: 15vh;
+  text-align: center;
+  vertical-align: middle;
+  
+  background-color: rgb(238,238,238);
+}
+#insidefourthdiv{
+  size: 75%;
+  width: 34%;
+  text-align: center;
+  margin-left: 33%;
+  margin-top: -2%;
+}
+
+
+select {
+  border: solid red;
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: white;
+  font-size: 16px;
+}
+
+select:focus {
+  outline: none;
+  border-color: #4CAF50;
+}
+
+select option {
+  padding: 10px;
+}
+select {
+  background-image: url('dropdown-arrow.png');
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: 20px;
+}
+#fifthdiv{
+  /* border: solid black; */
+  text-align: center;
+  background-color: white;
+}
+.faq-container {
+  /* border: solid black; */
+  max-width: 800px;
+  margin: auto;
+
+}
+
+.faq-dropdown {
+  /* border: solid black; */
+  margin-bottom: 20px;
+}
+
+.faq-answers .faq-answer {
+  /* border: solid brown; */
+  display: none;
+}
+
+.faq-answers .faq-answer.active {
+  /* border: solid magenta; */
+  display: block;
+  margin-bottom: 20px;
+}
+#sixthdiv{
+  display: inline-block;
+  margin: 1% 0 2% ;
+  padding: 1%;
+  background-color: rgb(248,253,253);
+  /* border: solid greenyellow; */
+  width: 93%;
+  margin-left: 2%;
+ 
+  text-align: center;
+}
+#sixthdiv>div{
+  /* border: solid red; */
+  margin: 1%;
+}
+#sixthdivii{
+  /* border: solid blueviolet; */
+  display: inline-block;
+  width: 93%;
+  vertical-align: middle;
+}
+#sixthdivii>div{
+  /* border: solid violet; */
+  padding-top: 3%;
+  display: inline-block;
+  width: 33%;
+  text-align: center;
+  background-color: white;
+  height: 15vh;
+  vertical-align: middle;
+
+}
+
+
+
+#sixthdiviii {
+  margin-top: 50px;
+}
+
+#sixthdiviii h3 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+#insidesixthdiviii {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+#insidesixthdiviii div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+}
+
+#insidesixthdiviii img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 10px;
+}
+
+#insidesixthdiviii p {
+  font-size: 16px;
+  margin: 0;
+}
+#seventhdiv{
+  background-color: red;
+  color: white;
+  font-size: 35px;
+  height: 10vh;
+  text-align: center;
+  vertical-align: middle;
+  padding-top: 13px;
+}
+#eightdiv{
+  font-size: 40px;
+  text-align: center;
+  margin-top: 1%;
+}
+
+
+
+

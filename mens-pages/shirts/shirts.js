@@ -153,6 +153,7 @@ function getCard(id, img, name, price, cat) {
 				title: name,
 				price: price,
 				category: cat,
+				quantity:1
 			}
 
 			cart_item.push(obj)
@@ -204,3 +205,23 @@ document.querySelector('.select-field3').addEventListener('click', () => {
 	document.querySelector('.down-arrow3').classList.toggle('rotate180')
 })
 // ##################################
+
+
+let filter = document.querySelector('.section')
+
+let high = document.getElementById('high')
+
+let low = document.getElementById('low')
+
+let btn = document.querySelector('.f-btn')
+
+btn.addEventListener('click', ()=>{
+
+	
+	if(high){
+		fetchUser(`https://weary-bee-train.cyclic.app/mens?user_category_section=t-shirt&_sort=price&_order=asc`)
+	}
+	if(low){
+		fetchUser(`https://weary-bee-train.cyclic.app/mens?user_category_section=t-shirt&_sort=price&_order=desc`)
+	}
+})

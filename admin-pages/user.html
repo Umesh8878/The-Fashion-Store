@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Section</title>
+    <link rel="stylesheet" href="post.css">
+    <link rel="stylesheet" href="/style/footer.css">
+    <link rel="shortcut icon" href="./../image/Logo.jpeg" type="image/x-icon">
+</head>
+<body>
+    <h1>Product Adding Page</h1>
+	<form id="registration-form">
+		<label for="name">Product Name:</label>
+		<input type="text" id="name" name="name" required><br><br>
+
+        <label for="time">Created Time:</label>
+		<input type="datetime" id="createdAt" name="createdAt" required><br><br>
+
+        <label for="price">Product Price:</label>
+		<input type="number" id="price" name="price" required><br><br>
+
+        <label for="Description">Product Description:</label>
+		<input type="text" id="Description" name="Description" required><br><br>
+
+        <label for="age">Image link:</label>
+	    <input type="link" id="img-link" name="image-link" required><br><br>
+
+        <label for="place">User Section:</label>
+        <select name="user_section" id="user_section">
+            <option value="">Selcet User Section</option>
+            <option value="Men">Men</option>
+            <option value="Women">Women</option>
+            <option value="Kids">Kids</option>
+        </select>
+
+        <label for="user_category">User category:</label>
+        <select id="user_category" name="user_category">
+            <option value="">Selcet An user Category</option>
+            <option value="Boys">Boys</option>
+            <option value="Girls">Girls</option>
+            <option value="Top_wear">Top Wear</option>
+            <option value="Bottom_wear">Bottom Wear</option>
+            <option value="Shoes&Accessories">Shoes & Accessories</option>
+        </select><br><br>
+
+        <label for="user_category_section">User Category Section:</label>
+        <select id="user_category_section" name="user_category_section">
+            <option value="">Selcet An user category section</option>
+            <option value="t-shirt">t-Shirt</option>
+            <option value="laggings">Laggings</option>
+            <option value="shoes">Shoes</option>
+            <option value="perfumes">Perfumes</option>
+            <option value="socks">Socks</option>
+            <option value="shirts">Shirts</option>
+            <option value="hoddies&jackets">Hoddies & Jackets</option>
+            <option value="cargos&joggers">Cargos & Joggers</option>
+            <option value="jeans">Jeans</option>
+            <option value="tops">Tops</option>
+        </select><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+
+    <!--############################### footer ###############################-->
+    <div>
+        <div id="footer">
+          <div class="1">
+            <ul>
+              <li><a href="#">NEED HELP</a></li>
+              <li><a href="#">Contact Us</a></li>
+              <li><a href="#">Track Order</a></li>
+              <li><a href="#">Returns & Refunds</a></li>
+              <li><a href="#">FAQs</a></li>
+              <li><a href="#">My Account</a></li>
+            </ul>
+          </div>
+          <div class="2">
+            <ul>
+              <li><a href="#">COMPANY</a></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Career</a></li>
+              <li><a href="#">Store Near Me</a></li>
+              <li><a href="#">From The Soul</a></li>
+              <li><a href="#">Souled Army</a></li>
+            </ul>
+          </div>
+          <div class="three">
+            <ul>
+              <li><a href="#">MORE INFO</a></li>
+              <li><a href="#">T&C</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Site Map</a></li>
+              <li>.</li>
+              <li>.</li>
+            </ul>
+          </div>
+          <div class="four">
+            <ul>
+              <li><a href="#">COD Available</a></li>
+              <li><a href="#">30 Days Return Policy</a></li>
+              <li>.</li>
+              <li>.</li>
+              <li>.</li>
+              <li>.</li>
+            </ul>
+          </div>
+        </div>
+        <div id="footer-img">
+          <img src="/image/footer img.png" alt="">
+        </div>
+        <div id="copyright">
+          <h4>© The Souled Store 2023-24</h4>
+        </div>
+      </div>
+</body>
+<script src="./post.js"></script>
+</html>

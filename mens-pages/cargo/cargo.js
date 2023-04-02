@@ -19,6 +19,7 @@ function fetchUser(url){
             console.log(data)
             let cardList = getCardList(data)
             mainSection.append(cardList)
+            filter(data)
           })
           .catch((error)=>{
            console.log('error')
@@ -127,7 +128,8 @@ function getCard(id,img,name,price,cat){
             image:img,
             title:name,
             price:price,
-            category:cat
+            category:cat,
+            
           }
     
           wish_list.push(obj)
@@ -162,7 +164,8 @@ function getCard(id,img,name,price,cat){
             image:img,
             title:name,
             price:price,
-            category:cat
+            category:cat,
+            quantity:1
           }
     
           cart_item.push(obj)
@@ -203,3 +206,21 @@ function check2(id){
     }
     return false;
 }
+
+
+document.querySelector('.select-field').addEventListener('click', () => {
+	document.querySelector('.list').classList.toggle('show')
+	document.querySelector('.down-arrow').classList.toggle('rotate180')
+})
+
+document.querySelector('.select-field2').addEventListener('click', () => {
+	document.querySelector('.list2').classList.toggle('show')
+	document.querySelector('.down-arrow2').classList.toggle('rotate180')
+})
+
+document.querySelector('.select-field3').addEventListener('click', () => {
+	document.querySelector('.list3').classList.toggle('show')
+	document.querySelector('.down-arrow3').classList.toggle('rotate180')
+})
+
+
